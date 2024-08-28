@@ -21,7 +21,9 @@
         "Url": "https://liameetup.vercel.app/",
         "Github": "https://github.com/HannesAlexandersson/Branshevent",
         "img": "src/Assets/screenshots/branchevent.png",
+        "previewImg": "src/Assets/screens/branchevent.svg",
         "path": "/extWebPage?name=branchevent",
+        "description": "Why dont start with the latest project? In Branchevent The webdevs and the digital designers joined forces to develop an application for the big LIA (internship) event hosted by Yrgo. Each group where to develop their own interpretation of Yrgos style, while still submit and operational sign up application. We developed an matching app where the students could match with the companies attending to find the companies that liked the same techstachs as the students. Its built in react for the frontend and we built an node express rest api for the backend",
         "tooltip": "react node.js express. A call project to built a event page for a LIA event where students and companys can get to know eachother a bit before LIA period. It also houses a matchmaking function"
       },
       "Retronautica": {
