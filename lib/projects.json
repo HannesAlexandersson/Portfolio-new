@@ -1,0 +1,127 @@
+{
+    "newestSiteArray": {
+      "the-finance-webscraper-app": {
+        "Name": "the-finance-app",
+        "Url": "https://finance-app-five-neon.vercel.app/",
+        "Github": "https://github.com/HannesAlexandersson/FinanceApp",
+        "img": "src/Assets/screenshots/financeapp.jpg",
+        "path": "/extWebPage?name=the-finance-app",
+        "tooltip": "a webscraper using react node.js express and playwright, The backend is hosted at Render and Im experience some problems. It seems that any time i want to use the app I need to log in to render and restart the webservice for the api to work"
+      },
+      "the-Chuck-Norris-Generator": {
+        "Name": "the-Chuck-Norris-Generator",
+        "Url": "https://the-chuck-norris-generator.vercel.app/",
+        "Github": "https://github.com/HannesAlexandersson/The-Chuck-Norris-generator",
+        "img": "src/Assets/screenshots/chuck.png",
+        "path": "/extWebPage?name=the-Chuck-Norris-Generator",
+        "tooltip": "built with react node.js express. its a simply react app that uses a open api to fetch Chuck Norris jokes"
+      },
+      "BranchEvent": {
+        "Name": "BranchEvent",
+        "Url": "https://liameetup.vercel.app/",
+        "Github": "https://github.com/HannesAlexandersson/Branshevent",
+        "img": "src/Assets/screenshots/branchevent.png",
+        "path": "/extWebPage?name=branchevent",
+        "tooltip": "react node.js express. A call project to built a event page for a LIA event where students and companys can get to know eachother a bit before LIA period. It also houses a matchmaking function"
+      },
+      "Retronautica": {
+        "Name": "Retronautica",
+        "Url": "https://www.alexanderochson.se/Retronautica/",
+        "Github": "https://github.com/HannesAlexandersson/Retronautica",
+        "img": "src/Assets/screenshots/retroscreenshot.png",
+        "path": "/extWebPage?name=Retronautica",
+        "tooltip": "A project in the digital design course, Where we would utilize our new gained skills in figma to create a fictive cinema landing page"
+      },
+      "pong-game": {
+        "Name": "pong-game",
+        "Url": "https://www.alexanderochson.se/pong-game/",
+        "Github": "https://github.com/HannesAlexandersson/pong-game",
+        "img": "src/Assets/screenshots/pongscreenshot.png",
+        "path": "/extWebPage?name=pong-game",
+        "tooltip": "an simple vanilla JS app where I recreate the classic pong game"
+      },
+      "Protech": {
+        "Name": "Protech",
+        "Url": "https://www.alexanderochson.se/Protech/",
+        "Github": "https://github.com/HannesAlexandersson/Protech",
+        "img": "src/Assets/screenshots/Protechscreenshot.png",
+        "path": "/extWebPage?name=Protech",
+        "tooltip": "One of the first big projects we did togheter with the Degital design class and the computer graphical students. Built in php and plain html and css."
+      },
+      "Yrgopelago": {
+        "Name": "Yrgopelago",
+        "Url": "https://www.alexanderochson.se/Yrgopelago/",
+        "Github": "https://github.com/HannesAlexandersson/Yrgopelago",
+        "img": "src/Assets/screenshots/Yrgopelagoscreenshot.png",
+        "path": "/extWebPage?name=Yrgopelago",
+        "tooltip": "A fully operational fictiv hotel where the user can book one of 3 rooms. Connected to the central bank of Yrgopelago where we keep our fictive money! php vanilla JS sqlite and css"
+      },
+      "Parallax-project": {
+        "Name": "Parallax-project",
+        "Url": "https://www.alexanderochson.se/Parallax-project/",
+        "Github": "https://github.com/HannesAlexandersson/Parallax-project",
+        "img": "src/Assets/screenshots/halloweenscreenshot.png",
+        "path": "/extWebPage?name=Parallax-project",
+        "tooltip": "Testing some parralax effects"
+      },
+      "Waterworks": {
+        "Name": "Waterworks",
+        "Url": "https://alexanderochson.se/waterworks/",
+        "Github": "https://github.com/HannesAlexandersson/waterworks",
+        "img": "src/Assets/screenshots/waterworks.png",
+        "path": "/extWebPage?name=Waterworks",
+        "tooltip": "Built fully in vanilla JS esm modules. Uses a api from GBG stad about percipications"
+      },
+      "Tic-tac-toe": {
+        "Name": "Tic Tac Toe",
+        "Url": "https://typescript-project-three.vercel.app/",
+        "Github": "https://github.com/HannesAlexandersson/typescriptProject",
+        "img": "src/Assets/screenshots/tictac.png",
+        "path": "/extWebPage?name=tic-tac-toe",
+        "tooltip": "My first typescript app. A simple tic tac toe game."
+      },
+      "portfolio": {
+        "Name": "Hannes-portfolio",
+        "Url": "https://alexanderochson.se/portfolio/",
+        "Github": "https://github.com/HannesAlexandersson/portfolio",
+        "img": "src/Assets/screenshots/portfolio.jpg",
+        "path": "/extWebPage?name=portfolio",
+        "tooltip": "vanilla php MCV style"
+      }
+    },
+    "earlyDaysArray": {
+      "SomeTeams": {
+        "Name": "SomeTeams",
+        "Url": "https://www.alexanderochson.se/SomeTeams/",
+        "Github": "https://github.com/HannesAlexandersson/SomeTeams",
+        "img": "src/Assets/screenshots/someteamsscreenshot.png",
+        "path": "/extWebPage?name=SomeTeams",
+        "tooltip": "the very first thing we did at Yrgo and thus my very first website ever."
+      },
+      "snack-o-mat": {
+        "Name": "snack-o-mat",
+        "Url": "https://www.alexanderochson.se/snack-o-mat/",
+        "Github": "https://github.com/HannesAlexandersson/snack-o-mat",
+        "img": "src/Assets/screenshots/snacscreenshot.png",
+        "path": "/extWebPage?name=snack-o-mat",
+        "tooltip": "the second thing we did at Yrgo."
+      },
+      "OpenAPI": {
+        "Name": "OpenAPI",
+        "Url": "https://www.alexanderochson.se/OpenAPI/",
+        "Github": "https://github.com/HannesAlexandersson/OpenAPI",
+        "img": "src/Assets/screenshots/openscreenshot.png",
+        "path": "/extWebPage?name=OpenAPI",
+        "tooltip": "The first time we got to use api. So i built an hub for collecting all my API projects. So this site leads to a collection of API projects we have done over the year at Yrgo"
+      },
+      "theRoom": {
+        "Name": "theRoom",
+        "Url": "https://www.alexanderochson.se/theRoom/",
+        "Github": "https://github.com/HannesAlexandersson/theRoom",
+        "img": "src/Assets/screenshots/roomscreenshot.png",
+        "path": "/extWebPage?name=theRoom",
+        "tooltip": "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room"
+      }
+    }
+  }
+  

@@ -2,112 +2,133 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="outer-white">
+        <div className="outer-black-thick">
+          <div className="outer-white-thin">
+            <div className="outer-black-thin">
+           
+              <div className="h-[85svh] bg-heroBg bg-pos relative bg-no-repeat bg-cover bg-center border-[22px]">
+                              
+                <div className="flex relative justify-center items-center flex-col w-[40%] py-8 px-12  ">
+
+                  <div className="font-ibm text-primary-accent">                  
+
+                    <div>
+                      <h1 className="text-5xl m-0 shadow-md">WELCOME</h1>
+                      <p className="text-xl m-0 shadow-md">To Hannes Alexanderssons portfolio</p>
+                    </div>
+
+                    <div className="my-5 mx-0 shadow-md">
+                      This is where I store my collection of "websites" that I have done so far. Please feel free to look around. If you want to get in touch, dont hesitate to send me an e-mail or something!
+                    </div>
+                  </div>
+                  
+
+                </div>
+                <div className="bottom-16 left-16 absolute ">
+                    <a className="font-grandstander" href='mailto:s103154@gmail.com?subject=I want you to come work for me!'><span class="mailMe"><button class="btn-cta">Get In Touch</button></span></a>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
+      .screen-outer-container {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+      <div className="mt-20 mb-40 flex justify-center items-center flex-col ">
+          
+        <div clasNames="virtual-card">
+          <div className="card-content screen-title text-wrapper default-font ">    
+            <h3><a href="/collection">Samples</a></h3>
+          </div>
+        </div>
+        -->
+        <div className="screen-wrapper">
+            
+            <div className="screen-inner-container">
+                <div className="screen-text default-font">
+                  <h4><a href="https://liameetup.vercel.app/">Branchevent</a></h4>
+                  <p>Why dont start with the latest project? In Branchevent The webdevs and the digital designers joined forces to develop an application for the big LIA (internship) event hosted by Yrgo. Each group where
+                  to develop their own interpretation of Yrgos style, while still submit and operational sign up application. We developed an matching app where the students could match with the companies attending to find the companies that liked the same techstachs as the students. Its built in react for the frontend and we built an node express rest api for the backend</p>
+                </div>
+                  <a className="screenLinks" href="https://liameetup.vercel.app/"><img class="screen" src="src/Assets/screens/branchevent.svg" alt="screenshot of branchevent website"/></a>
+              </div>
+            
+              <div className="screen-inner-container">
+                <div className="screen-text default-font">
+                  <h4><a href="https://www.alexanderochson.se/Protech/">Protech</a></h4>
+                  <p>Protech was a joint effort project in wich we, the web devs, joined forces with the Digital Design and Graphical Artist students to create a landing page for a fictive product. the GA-students created the products, the designers designed the layout, and we the web devs made it a reality! Since this was early on the stach only contain html, css and vanilla JS</p>
+                </div>
+                      
+                  <a className="screenLinks" href="https://www.alexanderochson.se/Protech/"><img class="screen" src="src/Assets/screens/Group 66.svg" alt="screenshot of protech website"/></a> 
+              
+              </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+
+        
+            
+          <div class="screen-inner-container">
+            <div class="screen-text default-font">
+              <h4><a href="https://www.alexanderochson.se/Retronautica/">Retronautica</a></h4>
+              <p>Retronautica was a project in the course Digital Design where we was supposed to create a website for our own dream cinema. Me and my project partner Liv both love fantasy and science fiction, so ofcourse we made a science fiction cinema who only plays old classics! It contains a landing page and a event page for 2000 A space odysee´. Again very early work and thus a lightweight stach of html, css and JS</p>
+            </div>
+            
+            <a class="screenLinks" href="https://www.alexanderochson.se/Retronautica/"><img class="screen" src="src/Assets/screens/Group 63.svg" alt="screenshot of retronautica website"/></a> 
+          
+          </div>
+
+          <div class="screen-inner-container">
+            <div class="screen-text default-font">
+              <h4><a href="https://www.alexanderochson.se/Yrgopelago/">Yrgopelago</a></h4>
+              <p>Yrgopelago was a project we had over christmas 2023. It was a contest among the students of the class, where we each made a fictive hotel in the  fictive archopelago of Yrgopelago. We then all got 100 dollars each wich we could then spend on eachothers hotels. The student who had the most money on the end of the day won! In this project I used php and sqlite to handle the backend while the frontend is basic html and css with a little JS sprinkled in</p>
+            </div>
+                
+              
+                  <a class="screenLinks" href="https://www.alexanderochson.se/Yrgopelago/"><img class="screen" src="src/Assets/screens/Group 62.svg" alt="screenshot of yrgopelago website"/></a>    
+              
+            
+          </div>
+          
+          
+          <div class="screen-inner-container">
+            <div class="screen-text default-font">
+              <h4><a href="https://tictactoe-five-vert.vercel.app/">Tic Tac Toe</a></h4>
+              <p>If you get bored here, why dont head over to my first ever react application? Its currently hosted over at Vercel and is a very simple little tic tac toe game, where two players can play eachother. Its nothing fancy, nothing amazing, but still, creating a tic tac toe with React is for what i have heard a very common interview question for many tech companys. So here is mine!!!</p>
+            </div>
+            
+                  
+                <a class="screenLinks" href="https://tictactoe-five-vert.vercel.app/"><img class="screen" src="src/Assets/screens/Group 86.svg" alt="screenshot of tic tac toe website"/></a>        
+                
+            
+          
+          </div>
+
+        </div>
+        
+        
+
+
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div class="endTxt card-content screen-title text-wrapper default-font ">
+            <p>if you want to explore all of the different sites, then head over to the collection page!</p>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <script src="src/Scripts/3dcards.js"></script>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      <hr>
     </main>
   );
 }
