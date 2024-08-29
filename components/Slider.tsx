@@ -1,3 +1,5 @@
+'use client'
+
 import { useRef, useState, useCallback } from 'react';
 import useEventListener from '../hooks/useEventListener';
 import Image from 'next/image';
