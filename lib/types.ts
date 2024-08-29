@@ -25,3 +25,14 @@ export interface Projects {
     preview?: string;
     tooltip?: string;
 }
+
+/* export interface ProjectCardsProps {
+    oldProjects: Record<string, Projects>;
+    projectData: Record<string, Projects>;
+  } */
+
+export interface ProjectCardsProps {
+    oldProjects: Projects[];
+    projectData: Projects[];
+    thirdSemester: Projects[];
+}

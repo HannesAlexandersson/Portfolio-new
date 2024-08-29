@@ -50,6 +50,27 @@ export const frontPagePreview: ProjectProps[] = [
     },
   ]
 
+export const thirdSemester: Projects[] = [
+  {
+    Name: "Konstiga Måsen",
+    Url: "https://sammanslaget-green.vercel.app/",
+    Github: "",
+    img: "/Screenshots//masenBig.png",
+    path: "/extWebPage?name=Konstiga-Måsen",
+    description: "Konstiga måsen is a joint venture with the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react. ",
+    tooltip: "Konstiga måsen is a joint venture with the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react. "
+  },
+  {
+    Name: "Svenska krögare",
+    Url: "https://www.krogare.se/",
+    Github: "N/A",
+    img: "/Screenshots/krogare.png",
+    path: "/extWebPage?name=Svenska-krögare",
+    description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer. This is my first actual web-dev job that I actually created something that is being used on a daily basis and earned me some sweet sweet cash!",
+    tooltip: "My first actual web-dev work. During the summer of 2024 me and a friend worked together to create a completly new website for 'Svenska krögare'. Becouse of this was an actual paid job I dont own the source code and cant provide you with an github link. The site is built in next.js and we used Contentful as CMS for the customer.",
+  }
+];
+
 
 export const projectData: Projects[] = [
   {
@@ -155,39 +176,39 @@ export const projectData: Projects[] = [
 
 export const oldProjects: Projects[] = [
   {
-    "Name": "SomeTeams",
-    "Url": "https://www.alexanderochson.se/SomeTeams/",
-    "Github": "https://github.com/HannesAlexandersson/SomeTeams",
-    "img": "/Screenshots/someteamsscreenshot.png",
-    "path": "/extWebPage?name=SomeTeams",
-    "description": "the very first thing we did at Yrgo and thus my very first website ever. Atm its not hosted.",
-    "tooltip": "the very first thing we did at Yrgo and thus my very first website ever."
+    Name: "SomeTeams",
+    Url: "https://www.alexanderochson.se/SomeTeams/",
+    Github: "https://github.com/HannesAlexandersson/SomeTeams",
+    img: "/Screenshots/someteamsscreenshot.png",
+    path: "/extWebPage?name=SomeTeams",
+    description: "the very first thing we did at Yrgo and thus my very first website ever. Atm its not hosted.",
+    tooltip: "the very first thing we did at Yrgo and thus my very first website ever."
   },
  {
-    "Name": "snack-o-mat",
-    "Url": "https://www.alexanderochson.se/snack-o-mat/",
-    "Github": "https://github.com/HannesAlexandersson/snack-o-mat",
-    "img": "/Screenshots/snacscreenshot.png",
-    "path": "/extWebPage?name=snack-o-mat",
-    "description": "the second thing we did at Yrgo. Atm its not hosted.",
-    "tooltip": "the second thing we did at Yrgo."
+    Name: "snack-o-mat",
+    Url: "https://www.alexanderochson.se/snack-o-mat/",
+    Github: "https://github.com/HannesAlexandersson/snack-o-mat",
+    img: "/Screenshots/snacscreenshot.png",
+    path: "/extWebPage?name=snack-o-mat",
+    description: "the second thing we did at Yrgo. Atm its not hosted.",
+    tooltip: "the second thing we did at Yrgo."
   },
  {
-    "Name": "OpenAPI",
-    "Url": "https://www.alexanderochson.se/OpenAPI/",
-    "Github": "https://github.com/HannesAlexandersson/OpenAPI",
-    "img": "/Screenshots/openscreenshot.png",
-    "path": "/extWebPage?name=OpenAPI",
-    "description": "The first time we got to use api. So i built an hub for collecting all my API projects. So this site leads to a collection of API projects we have done over the year at Yrgo. Atm its not hosted.",
-    "tooltip": "The first time we got to use api. So i built an hub for collecting all my API projects. So this site leads to a collection of API projects we have done over the year at Yrgo"
+    Name: "OpenAPI",
+    Url: "https://www.alexanderochson.se/OpenAPI/",
+    Github: "https://github.com/HannesAlexandersson/OpenAPI",
+    img: "/Screenshots/openscreenshot.png",
+    path: "/extWebPage?name=OpenAPI",
+    description: "The first time we got to use api. So i built an hub for collecting all my API projects. So this site leads to a collection of API projects we have done over the year at Yrgo. Atm its not hosted.",
+    tooltip: "The first time we got to use api. So i built an hub for collecting all my API projects. So this site leads to a collection of API projects we have done over the year at Yrgo"
   },
  {
-    "Name": "theRoom",
-    "Url": "https://www.alexanderochson.se/theRoom/",
-    "Github": "https://github.com/HannesAlexandersson/theRoom",
-    "img": "/Screenshots/roomscreenshot.png",
-    "path": "/extWebPage?name=theRoom",
-    "description": "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room. Atm its not hosted.",
-    "tooltip": "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room"
+    Name: "theRoom",
+    Url: "https://www.alexanderochson.se/theRoom/",
+    Github: "https://github.com/HannesAlexandersson/theRoom",
+    img: "/Screenshots/roomscreenshot.png",
+    path: "/extWebPage?name=theRoom",
+    description: "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room. Atm its not hosted.",
+    tooltip: "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room"
   }
 ];
