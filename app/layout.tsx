@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <div className={`${inter.className} ${bebasNeue.className} ${grandstander.className} ${ibmPlexSans.className}`}>{children}</body>
+      <body className={`${inter.className} ${bebasNeue.className} ${grandstander.className} ${ibmPlexSans.className}`}>{children}</body>
     </html>
   );
 }

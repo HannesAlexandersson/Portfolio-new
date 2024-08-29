@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'showText': 'showText 0.5s 1s linear forwards',
+        'animate': 'animate 1s cubic-bezier(1,0,0.5,1) forwards',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -20,6 +22,14 @@ const config: Config = {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
+        },
+        'showText': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'animate': {          
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
         },
       },
       fontFamily: {

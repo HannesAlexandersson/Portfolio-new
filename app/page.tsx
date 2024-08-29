@@ -54,18 +54,18 @@ export default function Home() {
           <div className="outer-white-thin">
             <div className="outer-black-thin">
            
-              <div className="h-[85svh] bg-heroBg bg-pos relative bg-no-repeat bg-cover bg-center border-[22px]">
+              <div className="h-[85svh] bg-heroBg bg-pos relative bg-no-repeat bg-cover bg-center rounded-[22px]">
                               
                 <div className="flex relative justify-center items-center flex-col w-[40%] py-8 px-12  ">
 
                   <div className="font-ibm text-primary-accent">                  
 
                     <div>
-                      <h1 className="text-5xl m-0 shadow-md">WELCOME</h1>
-                      <p className="text-xl m-0 shadow-md">To Hannes Alexanderssons portfolio</p>
+                      <h1 className="text-5xl m-0">WELCOME</h1>
+                      <p className="text-xl m-0">To Hannes Alexanderssons portfolio</p>
                     </div>
 
-                    <div className="my-5 mx-0 shadow-md">
+                    <div className="my-5 mx-0">
                       This is where I store my collection of &rdquo;websites&rdquo; that I have done so far. Please feel free to look around. If you want to get in touch, dont hesitate to send me an e-mail or something!
                     </div>
                   </div>
@@ -73,7 +73,11 @@ export default function Home() {
 
                 </div>
                 <div className="bottom-16 left-16 absolute ">
-                    <a className="font-grandstander" href='mailto:s103154@gmail.com?subject=I want you to come work for me!'><span class="mailMe"><button class="btn-cta">Get In Touch</button></span></a>
+                    <a className="font-grandstander" href='mailto:s103154@gmail.com?subject=I want you to come work for me!'>
+                      <span className="mailMe">
+                        <button className="btn-cta bg-[#161415] text-[#f3e1c7] py-[10px] px-[20px] border-[2px] border-[#f45325] rounded-[5px] cursor-pointer">Get In Touch</button>
+                      </span>
+                    </a>
                   </div>
               </div>
               
