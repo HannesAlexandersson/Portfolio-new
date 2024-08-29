@@ -32,6 +32,7 @@
         "Github": "https://github.com/HannesAlexandersson/Retronautica",
         "img": "src/Assets/screenshots/retroscreenshot.png",
         "path": "/extWebPage?name=Retronautica",
+        "description": "Retronautica was a project in the course Digital Design where we was supposed to create a website for our own dream cinema. Me and my project partner Liv both love fantasy and science fiction, so ofcourse we made a science fiction cinema who only plays old classics! It contains a landing page and a event page for 2000 A space odysee´. Again very early work and thus a lightweight stach of html, css and JS",
         "tooltip": "A project in the digital design course, Where we would utilize our new gained skills in figma to create a fictive cinema landing page"
       },
       "pong-game": {
@@ -48,6 +49,7 @@
         "Github": "https://github.com/HannesAlexandersson/Protech",
         "img": "src/Assets/screenshots/Protechscreenshot.png",
         "path": "/extWebPage?name=Protech",
+        "description": "Protech was a joint effort project in wich we, the web devs, joined forces with the Digital Design and Graphical Artist students to create a landing page for a fictive product. the GA-students created the products, the designers designed the layout, and we the web devs made it a reality! Since this was early on the stach only contain html, css and vanilla JS. Unfortunatly I dont have hosting for my php projects atm.",
         "tooltip": "One of the first big projects we did togheter with the Degital design class and the computer graphical students. Built in php and plain html and css."
       },
       "Yrgopelago": {
@@ -56,7 +58,8 @@
         "Github": "https://github.com/HannesAlexandersson/Yrgopelago",
         "img": "src/Assets/screenshots/Yrgopelagoscreenshot.png",
         "path": "/extWebPage?name=Yrgopelago",
-        "tooltip": "A fully operational fictiv hotel where the user can book one of 3 rooms. Connected to the central bank of Yrgopelago where we keep our fictive money! php vanilla JS sqlite and css"
+        "description": "Yrgopelago was a project we had over christmas 2023. It was a contest among the students of the class, where we each made a fictive hotel in the  fictive archopelago of Yrgopelago. We then all got 100 dollars each wich we could then spend on eachothers hotels. The student who had the most money on the end of the day won! In this project I used php and sqlite to handle the backend while the frontend is basic html and css with a little JS sprinkled in",
+        "tooltip": "A fully operational fictive hotel where the user can book one of 3 rooms. Connected to the central bank of Yrgopelago where we keep our fictive money! php vanilla JS sqlite and css"
       },
       "Parallax-project": {
         "Name": "Parallax-project",
@@ -80,6 +83,7 @@
         "Github": "https://github.com/HannesAlexandersson/typescriptProject",
         "img": "src/Assets/screenshots/tictac.png",
         "path": "/extWebPage?name=tic-tac-toe",
+        "description": "If you get bored here, why dont head over to my first ever react application? Its currently hosted over at Vercel and is a very simple little tic tac toe game, where two players can play eachother. Its nothing fancy, nothing amazing, but still, creating a tic tac toe with React is for what i have heard a very common interview question for many tech companys. So here is mine!!!",
         "tooltip": "My first typescript app. A simple tic tac toe game."
       },
       "portfolio": {

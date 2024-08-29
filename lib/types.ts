@@ -1,12 +1,9 @@
 
 export interface ProjectProps {
-    title: string;
-    github: string;
+    title: string;   
     description: string;
-    link: string;
-    image: string;
-    preview: string;
-    tooltip: string;
+    link: string;    
+    preview: string;   
 }
 export interface ProjectData {
     project: ProjectProps;

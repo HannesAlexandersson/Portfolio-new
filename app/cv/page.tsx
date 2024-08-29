@@ -2,10 +2,23 @@ export default function Cv(){
 
     return(
         <main>
-            <div class="skillset-container">
+            <div class="skillset-container pt-12">
+            .sub-title {
+    text-align: center;
+    font-size: 4.2em;
+    padding-bottom: .75rem;
+    padding-top: .9rem;
+}
+.sub-title-p{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 1rem .75rem 1rem;
+}
+.sub-title span{
+    color: #0ef;
+}
     
-    
-    <h1 class="sub-title">
+    <h1 class="sub-title text-center text-7xl">
         My <span>skills</span>
     </h1>
     

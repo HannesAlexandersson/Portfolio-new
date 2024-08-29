@@ -1,6 +1,50 @@
 import Preview from "@/components/Preview";
+import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
+
+const frontPagePreview = [
+  {
+    title: "Konstiga Måsen",
+    description: "Why dont start with the latest project? In Konstiga måsen we worked alongside the scriptwriters and ux designer students to create an application for children with the goal",
+    link: "https://sammanslaget-green.vercel.app/",
+    preview: "src/Assets/screens/Group 87.svg",
+  },
+  {
+    title: "Svenska krögare",
+    description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer.",
+    link: "https://www.krogare.se/",
+    preview: "src/Assets/screens/Group 88.svg",
+  },
+  {
+    title: "Branchevent",
+    description: "In Branchevent The webdevs and the digital designers joined forces to develop an application for the big LIA (internship) event hosted by Yrgo. Each group where to develop their own interpretation of Yrgos style, while still submit and operational sign up application. We developed an matching app where the students could match with the companies attending to find the companies that liked the same techstachs as the students. Its built in react for the frontend and we built an node express rest api for the backend",
+    link: "https://liameetup.vercel.app/",
+    preview: "src/Assets/screens/branchevent.svg",
+  },
+  {
+    title: "Protech",
+    description:
+      "Protech was a joint effort project in wich we, the web devs, joined forces with the Digital Design and Graphical Artist students to create a landing page for a fictive product. the GA-students created the products, the designers designed the layout, and we the web devs made it a reality! Since this was early on the stach only contain html, css and vanilla JS. Unfortunatly I dont have hosting for my php projects atm.",
+    link: "https://www.alexanderochson.se/Protech/",
+    preview: "src/Assets/screens/Group 66.svg",
+  },
+  {
+    title: "Retronautica",
+    description:
+      "Retronautica was a project in the course Digital Design where we was supposed to create a website for our own dream cinema. Me and my project partner Liv both love fantasy and science fiction, so ofcourse we made a science fiction cinema who only plays old classics! It contains a landing page and a event page for 2000 A space odysee´. Again very early work and thus a lightweight stach of html, css and JS. Another project I cant host atm.",
+    link: "https://www.alexanderochson.se/Retronautica/",
+    preview: "src/Assets/screens/Group 63.svg",
+  },
+  {
+    title: "Yrgopelago",
+    description:
+      "Yrgopelago was a project we had over christmas 2023. It was a contest among the students of the class, where we each made a fictive hotel in the  fictive archopelago of Yrgopelago. We then all got 100 dollars each wich we could then spend on eachothers hotels. The student who had the most money on the end of the day won! In this project I used php and sqlite to handle the backend while the frontend is basic html and css with a little JS sprinkled in. To bad I cant host this atm.",
+    link: "https://www.alexanderochson.se/Yrgopelago/",
+    preview: "src/Assets/screens/Group 62.svg",
+  },
+]
+
 
 export default function Home() {
   return (
@@ -22,7 +66,7 @@ export default function Home() {
                     </div>
 
                     <div className="my-5 mx-0 shadow-md">
-                      This is where I store my collection of "websites" that I have done so far. Please feel free to look around. If you want to get in touch, dont hesitate to send me an e-mail or something!
+                      This is where I store my collection of &rdquo;websites&rdquo; that I have done so far. Please feel free to look around. If you want to get in touch, dont hesitate to send me an e-mail or something!
                     </div>
                   </div>
                   
@@ -46,12 +90,24 @@ export default function Home() {
           
         <div className="mt-4 flex items-center justify-center content-center flex-col gap-14">   
 
-          {projects.map((project) => (
+          {frontPagePreview.map((project) => (
             <Preview key={project.title} project={project} />
           ))}
 
+        </div>
+      </div>
 
-          {/* <div className="flex flex-col content-center justify-center items-center">          
+      <div className="text-center py-8 px-12 font-ibm text-primary-accent ">
+            <p>if you want to explore all of the different sites, then head over to the collection page!</p>
+      </div>
+
+      <hr />
+    </main>
+  );
+}
+
+
+ {/* <div className="flex flex-col content-center justify-center items-center">          
             <div className="w-[75%] text-primary-accent text-xl font-ibm">          
               <h4 className="mb-2 text-4xl"><a href="https://liameetup.vercel.app/">Branchevent</a></h4>
               <p className="mb-2 text-xl">
@@ -154,19 +210,3 @@ export default function Home() {
               <img className="screen" src="src/Assets/screens/Group 86.svg" alt="screenshot of tic tac toe website"/>
             </a> 
           </div> */}
-
-        </div>
-      </div>
-
-      <div className="endTxt card-content screen-title text-wrapper default-font ">
-            <p>if you want to explore all of the different sites, then head over to the collection page!</p>
-        </div>
-
-      
-
-
-
-      <hr />
-    </main>
-  );
-}
