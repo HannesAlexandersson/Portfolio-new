@@ -3,31 +3,270 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --font-inter: 'Inter', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-grandstander: 'Grandstander', sans-serif;
+  --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-bg: #081b29;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--default-bg);
+  background-color: var(--primary-bg);
+  overflow-x: hidden;
+}
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+}
+@layer components {
+  .hamburger-line {
+    @apply h-[2px] w-5 origin-right rounded-full bg-white transition-all duration-300;
+  }
+
+  .line-1 {
+    @apply w-line-width -translate-y-[1px] -rotate-45;
+  }
+
+  .line-2 {
+    @apply w-0 opacity-0;
+  }
+
+  .line-3 {
+    @apply w-line-width translate-y-[1px] rotate-45;
+  }
+
+  .section-contain {
+    @apply mx-auto max-w-[1440px] px-6 md:px-16;
+  }
+
+  .divider{
+    @apply flex flex-col mt-8 mr-32 mb-0 ml-32;   
+  }
+  .border-wrapperWhite{
+    @apply border-white border-[1px] rounded-[1.5rem] shadow-[0px_3px_8px_rgba(0,_0,_0,_0.24)];    
+  }
+  .border-wrapperBlack1{
+    @apply border-black border-[1px] rounded-[1.5rem];   
+  }
+  .border-wrapperBlack2 {
+    @apply border-black border-[1px] rounded-[1.5rem] shadow-[0px_3px_8px_rgba(0,_0,_0,_0.24)];    
+  }
+  .outer-white{    
+    @apply m-4 border-white border-[3px] rounded-[22px] relative top-[5rem];
+  }
+  .outer-black-thick{    
+    @apply border-black border-[9px] rounded-[22px] ;
+  }
+  .outer-black-thin{    
+    @apply border-black border-[1px] rounded-[22px] ;
+  }
+  .outer-white-thin{    
+    @apply border-white border-[1px] rounded-[22px] ;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+.progress-line span::after {
+  content: "";
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: .125em;
+  border-radius: 3px;
+  top: -0.45rem;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line .html span::after{
+  content: "80%";
+}
+.progress-line .php span::after{
+  content: "70%";
+}
+.progress-line .css span::after{
+  content: "60%";
+}
+.progress-line .javascript span::after{
+  content: "65%";
+}
+.progress-line .react span::after{
+  content: "50%";
+}
+.progress-line .SOF span::after{
+  content: "50%";
+}
+.progress-line span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -0.2rem;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+
+.radial-bars {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 10rem;
+  margin-bottom: .275rem;
+  position: relative;
+}
+.radial-bars .radial-bar svg{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+
+
+}
+
+@keyframes animate-bar{
+  100%{
+      stroke-dashoffset: -1;
   }
+}
+
+.path{
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+
+}
+
+.path-1{
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2{
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3{
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4{
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1{
+  100%{
+      stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path2{
+  100%{
+      stroke-dashoffset: 175;
+  }
+}
+@keyframes animate-path3{
+  100%{
+      stroke-dashoffset: 175;
+  }
+}
+@keyframes animate-path4{
+  100%{
+      stroke-dashoffset: 75;
+  }
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1em;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -.4rem;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+
+
+/*Intersection observer*/
+.cards {
+  /* background-image: url();
+  background-clip: text; */
+  background: white;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+    padding: 1.5rem;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 150ms;
+
+  width: 30dvw;
+  height: 20dvh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cards.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 99;
+    bottom: 70%;
+    left: 20%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    height: fit-content;
+}
+.card:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
 }
