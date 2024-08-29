@@ -3,162 +3,97 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { IoLogoCss3, IoLogoReact } from "react-icons/io5";
 import { SiPhp } from "react-icons/si";
 import { FaStackOverflow } from "react-icons/fa";
+import { FaRegCircle } from "react-icons/fa6";
 
 
 export default function Cv(){
+    
+    const technicalSkills = [
+        { name: 'HTML', icon: FaHtml5, color: 'text-[#c95d2e]', progress: '70%' },
+        { name: 'Javascript', icon: TbBrandJavascript, color: 'text-[#b0bc1e]', progress: '50%' },
+        { name: 'CSS', icon: IoLogoCss3, color: 'text-[#147bbc]', progress: '58%' },
+        { name: 'React', icon: IoLogoReact, color: 'text-[#69bcbc]', progress: '35%' },
+        { name: 'PHP', icon: SiPhp, color: 'text-[#6F5091]', progress: '55%' },
+        { name: 'Stack OverFlow', icon: FaStackOverflow, color: 'text-[#FFA500]', progress: '85%' },
+      ];
+    
+      const professionalSkills = [
+        { name: 'Teamwork', percentage: '90%', animationName: 'animate-path1' },
+        { name: 'Problem Solving', percentage: '70%', animationName: 'animate-path2' },
+        { name: 'Creativity', percentage: '70%', animationName: 'animate-path3' },
+        { name: 'Communication', percentage: '90%', animationName: 'animate-path4' },
+      ];
 
     return(
-        <main className="bg-[#fff] m-0 p-0 font-bebas">
+       
+        <main className="bg-[#081b29] text-white p-8 font-bebas">
             <div className="pt-12">  
-                <h1 className="text-center text-7xl pb-3 pt-4">
+                <h1 className="text-center text-5xl font-bold mb-4">
                     My <span className="text-[#0ef]">skills</span>
                 </h1>
                 
-                <section>
-                    <div className="w-full p-[2.5rem]" id="skills">
-                        <h1 className="text-center underline underline-offset-[.5rem] mb-8 ">Technical skills</h1>
-                        <p className="font-ibm text-center text-xl pt-0 px-4 pb-3">A visual representation of my own estimate of my programming skills. Based off my near pears at school</p>
-                       
-                        <div className="Technical-bars my-10 mx-0">
-
-                            <div className="bar text-xl first:mt-0 last:mb-0"><FaHtml5 className="fill-[#c95d2e]"/>  
-
-                                <div className="indfo"> 
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">HTML</span>                       
-                                </div>
-                            
-
-                                <div className="progress-line  html relative rounded-[10px] h-[0.275rem] bg-black origin-left animate-animate">
-                                
-                                    <span className="h-full w-[80%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left "></span>
-                                </div>
-
+                <section className="flex flex-wrap">
+                    <div className="w-full p-10" id="skills">
+                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Technical skills</h2>
+                        <p className="text-center text-lg mb-8">A visual representation of my own estimate of my programming skills. Based off my near peers at school</p>
+                        <div className="space-y-10">
+                        {technicalSkills.map((skill, index) => (
+                            <div key={index} className="relative">
+                            <div className="flex items-center mb-2">
+                                <skill.icon className={`${skill.color} w-6 h-6 mr-2`} />
+                                <span className="text-lg animate-showText opacity-0">{skill.name}</span>
                             </div>
-
-                            <div className="bar text-xl first:mt-0 last:mb-0">
-                                <TbBrandJavascript className="fill-[#b0bc1e]" />   
-
-                                <div className="indfo">   
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">Javascript</span>                        
-                                </div>
-                            
-                                <div className="progress-line javascript">
-                                    <span className="h-full w-[65%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left"></span>
-                                </div>
-
+                            <div className="h-2 bg-black rounded-full">
+                                <div 
+                                className="h-full bg-[#0ef] rounded-full animate-animate origin-left"
+                                style={{ width: skill.progress }}
+                                ></div>
                             </div>
-                            
-                            <div className="bar text-xl first:mt-0 last:mb-0">
-                            <IoLogoCss3 className="fill-[#147bbc]"/>  
-
-                                <div className="indfo">   
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">CSS</span>                        
-                                </div>
-                            
-                                <div className="progress-line css">
-                                    <span className="h-full w-[60%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left"></span>
-                                </div>
-
+                            <span className="absolute right-0 top-0 text-sm bg-black px-2 py-1 rounded animate-showText opacity-0">{skill.progress}</span>
                             </div>
-
-                            <div className="bar text-xl first:mt-0 last:mb-0">
-                            <IoLogoReact color="#69bcbc" />       
-
-                                <div className="indfo">    
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">React</span>                       
-                                </div>
-                            
-                                <div className="progress-line react">
-                                    <span className="h-full w-[50%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left"></span>
-                                </div>
-
-                            </div>
-
-                            <div className="bar text-xl first:mt-0 last:mb-0">
-                            <SiPhp color="#6F5091"/>      
-
-                                <div className="indfo">        
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">PHP</span>                   
-                                </div>
-                            
-                                <div className="progress-line php">
-                                    <span className="h-full w-[70%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left"></span>
-                                </div>
-
-                            </div>
-                            
-                            <div className="bar text-xl first:mt-0 last:mb-0">
-                            <FaStackOverflow color="#FFA500" />      
-
-                                <div className="indfo">        
-                                    <span className="text-[1.1em] font-medium opacity-0 animate-showText">Stack OverFlow</span>                   
-                                </div>
-                            
-                                <div className="progress-line SOF">
-                                    <span className="h-full w-[50%] bg-[#0ef] absolute rounded-[10px] animate-animate origin-left"></span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    
-
-                    <div className="container1 w-full p-10 ">
-                        <h1 className="heading text-center underline underline-offset-[.5rem] mb-8">Proffessional skills</h1>
-                        <div className="radial-bars">
-
-                            <div className="radial-bar">
-                                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                                    <circle className="path path-1" cx="100" cy="100" r="80"></circle>
-                                </svg>
-                                <div className="percentage">90%</div> 
-                                <div className="text">Teamwork</div> 
-                            </div>
-
-                            <div className="radial-bar">
-                                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                                    <circle className="path path-2" cx="100" cy="100" r="80"></circle>
-                                </svg>
-                                <div className="percentage">70%</div> 
-                                <div className="text">Problem Solving</div> 
-                            </div>
-
-                            <div className="radial-bar">
-                                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                                    <circle className="path path-3" cx="100" cy="100" r="80"></circle>
-                                </svg>
-                                <div className="percentage">70%</div> 
-                                <div className="text">Creativity</div> 
-                            </div>
-
-                            <div className="radial-bar">
-                                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                                    <circle className="path path-4" cx="100" cy="100" r="80"></circle>
-                                </svg>
-                                <div className="percentage">90%</div> 
-                                <div className="text">Communication</div> 
-                            </div>
-
-
+                        ))}
                         </div>
                     </div>
 
-                        
-                </section>
-            </div>
+                    <div className="w-full p-10">
+                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Professional skills</h2>
+                        <div className="flex flex-wrap justify-around">
+                        {professionalSkills.map((skill, index) => (
+                            <div key={index} className="w-1/2 mb-8 text-center">
+                            <div className="relative inline-block">
+                                <FaRegCircle className="w-32 h-32 text-[#0ef]" />
+                                <svg className="w-32 h-32 absolute top-0 left-0" viewBox="0 0 32 32">
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="14"
+                                    fill="none"
+                                    stroke="#0ef"
+                                    strokeWidth="4"
+                                    strokeDasharray="88"
+                                    strokeDashoffset="88"
+                                    transform="rotate(-90 16 16)"
+                                    className={`animate-[animate-bar_1s_linear_forwards] ${skill.animationName}`}
+                                />
+                                </svg>
+                                <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold animate-showText opacity-0">
+                                {skill.percentage}
+                                </span>
+                            </div>
+                            <p className="mt-2 text-lg animate-showText opacity-0">{skill.name}</p>
+                            </div>
+                        ))}
+                        </div>
+                    </div>
+                    </section>
+                </div>
 
-
-
-            <div className="outer-ram">
-                <h1 className="website-title default-font">Curriculum Vitae</h1>
-                <embed src="src/Assets/docs/HannesCV(6).pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
+                <div className="mt-16">
+                    <h2 className="text-center text-4xl font-bold text-[#0ef] mb-4">Curriculum Vitae</h2>
+                    <iframe src="/PDF/HannesCV.pdf" className="w-full h-[600px]" />
+                </div>
+    
+  
         </main>
     );
 }

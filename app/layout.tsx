@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Grandstander, IBM_Plex_Sans } from "next/font/google";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${bebasNeue.className} ${grandstander.className} ${ibmPlexSans.className}`}>{children}</body>
+      <body className={`${inter.className} ${bebasNeue.className} ${grandstander.className} ${ibmPlexSans.className}`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
