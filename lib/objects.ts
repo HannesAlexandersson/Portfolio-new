@@ -212,3 +212,23 @@ export const oldProjects: Projects[] = [
     tooltip: "Just for giggles. Its using the text to speech function to get the computer to read out some quotes from the room"
   }
 ];
+
+export const images = [
+  '/public/images/pull.jpg',
+  '/public/images/bull.jpg',
+  '/public/images/billytable.jpg',
+  '/public/images/billyston.jpg',
+  '/public/images/billyLake.webp',
+  '/public/images/pom.jpg',
+  '/public/images/tent.webp',
+  '/public/images/paddle.webp',
+  '/public/images/locht.jpg',
+  '/public/images/barnskrid.webp',
+  '/public/images/barne.jpeg',
+  '/public/images/fatboy.jpg',
+  '/public/images/tripplecoffe.webp',
+  '/public/images/caposhino.jpg',
+  '/public/images/hannes.jpg',
+  '/public/images/hannes3.webp',
+  '/public/images/sunset.webp'
+];

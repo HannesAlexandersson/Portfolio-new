@@ -3,26 +3,9 @@
 import { useRef, useState, useCallback } from 'react';
 import useEventListener from '../hooks/useEventListener';
 import Image from 'next/image';
+import { images } from '@/lib/objects';
 
-const images = [
-    '/public/images/pull.jpg',
-    '/public/images/bull.jpg',
-    '/public/images/billytable.jpg',
-    '/public/images/billyston.jpg',
-    '/public/images/billyLake.webp',
-    '/public/images/pom.jpg',
-    '/public/images/tent.webp',
-    '/public/images/paddle.webp',
-    '/public/images/locht.jpg',
-    '/public/images/barnskrid.webp',
-    '/public/images/barne.jpeg',
-    '/public/images/fatboy.jpg',
-    '/public/images/tripplecoffe.webp',
-    '/public/images/caposhino.jpg',
-    '/public/images/hannes.jpg',
-    '/public/images/hannes3.webp',
-    '/public/images/sunset.webp'
-  ];
+
 
   const Slider: React.FC = () => {
     const trackRef = useRef<HTMLDivElement>(null);
