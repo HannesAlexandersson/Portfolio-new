@@ -17,6 +17,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'heroBg': 'url("/backgrounds/bg-start.webp")',
+        'treeBg': 'url("/tree.png")',
       },
       keyframes: {
         'infinite-scroll': {
