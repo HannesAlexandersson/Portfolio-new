@@ -35,8 +35,11 @@ const NavbarClient: React.FC = () => {
     }, [lastScrollTop]);
   
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  
-    
+
+    // Close the menu when a link is clicked
+    const handleLinkClick = () => {
+      setIsMenuOpen(false);
+    };
   
     return (
         <nav className={`navbar flex justify-between fixed top-0 w-full z-50 transition-transform duration-500 ease-in-out ${isScrolled === 'animate' ? 'translate-y-[-200%]' : isScrolled === 'sticky' ? 'bg-opacity-80' : ''}`}>
@@ -62,7 +65,7 @@ const NavbarClient: React.FC = () => {
               <div key={link.href} className="nav-links-wrapper flex items-center gap-4 mb-4">
                 <Image src={link.icon} alt={`${link.text} icon`} width={24} height={24} />
                 <Link href={link.href} passHref>
-                  <div>
+                  <div onClick={handleLinkClick}>
                     <p className="text-lg font-semibold text-primary-accent hover:text-default-bg">
                       {link.text}
                     </p>
