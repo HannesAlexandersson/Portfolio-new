@@ -11,7 +11,7 @@ export const navLinks: NavLink[] = [
 export const frontPagePreview: ProjectProps[] = [
     {
       title: "Konstiga Måsen",
-      description: "Why dont start with the latest project? In Konstiga måsen we worked alongside the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react for the frontend and becouse of that we didnt really see any need of an backend we settle on using Contentful for handling the 'backend'",
+      description: "Why dont start with the latest project? In Konstiga måsen we worked alongside the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react for the frontend and since we didnt really have any need of an backend we settled on using Contentful for handling the 'backend'",
       link: "https://sammanslaget-green.vercel.app/",
       preview: "/Screens/masen1.png",
     },
