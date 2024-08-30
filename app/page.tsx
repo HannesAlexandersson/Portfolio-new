@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="flex justify-center items-center md:justify-start md:px-12 mb-12">
                     <a className="font-grandstander" href='mailto:s103154@gmail.com?subject=I want you to come work for me!'>
                       <span className="mailMe">
-                        <button className="btn-cta bg-[#161415] text-[#f3e1c7] py-[10px] px-[20px] border-[2px] border-[#f45325] rounded-[5px] cursor-pointer">Get In Touch</button>
+                        <button className="btn-cta hover:bg-[#f3e1c7] hover:text-[#161415] hover:scale-105 bg-[#161415] text-[#f3e1c7] py-[10px] px-[20px] border-[2px] border-[#f45325] rounded-[5px] cursor-pointer">Get In Touch</button>
                       </span>
                     </a>
                 </div>
