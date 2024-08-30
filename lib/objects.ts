@@ -16,6 +16,12 @@ export const frontPagePreview: ProjectProps[] = [
       preview: "/Screens/masen.png",
     },
     {
+      title: "Mormor och jag",
+      description: "A site I built for my wife using next.js and Sanity CMS. She uses it to sell stuff she creates, like ceramiks and clothing.",
+      link: "https://mormorochjag.vercel.app/",
+      preview: "/Screens/mojagScren.png",
+    },
+    {
       title: "Svenska krögare",
       description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer. This is my first actual web-dev job that I actually created something that is being used on a daily basis and earned me some sweet sweet cash!",
       link: "https://www.krogare.se/",
@@ -68,6 +74,15 @@ export const thirdSemester: Projects[] = [
     path: "/extWebPage?name=Svenska-krögare",
     description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer. This is my first actual web-dev job that I actually created something that is being used on a daily basis and earned me some sweet sweet cash!",
     tooltip: "My first actual web-dev work. During the summer of 2024 me and a friend worked together to create a completly new website for 'Svenska krögare'. Becouse of this was an actual paid job I dont own the source code and cant provide you with an github link. The site is built in next.js and we used Contentful as CMS for the customer.",
+  },
+  {
+    Name: "Mormor och jag",
+    Url: "https://mormorochjag.vercel.app/",
+    Github: "https://github.com/HannesAlexandersson/Mormorochjag",
+    img: "/Screenshots/mojag.png",
+    path: "/extWebPage?name=Mormor-och-jag",
+    description: "Mormor och jag is what my wife calls herself when she creates ceramiks and sewing. She mainly does it for funs, but latley she actually have managed to get some stuff sold. So with higher demands comes an need to reach out to more people. So with an combination of tic-toc shorts and reels with this new website she can do just that! Also I took it as an learning occasion. I used next.js and Sanity CMS.",
+    tooltip: " Mormor och jag is what my wife calls herself when she creates ceramiks and sewing. She mainly does it for funs, but latley she actually have managed to get some stuff sold. So with higher demands comes an need to reach out to more people. So with an combination of tic-toc shorts and reels with this new website she can do just that! Also I took it as an learning occasion. I used next.js and Sanity CMS."
   }
 ];
 

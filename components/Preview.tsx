@@ -5,8 +5,8 @@ import { ProjectData } from "@/lib/types";
 export default function Preview({ project }: ProjectData) {
 
     return(
-        <div className="flex flex-col content-center justify-center items-center">          
-            <div className="w-[75%] text-primary-accent text-xl font-ibm px-4">          
+        <div className="flex flex-col content-center justify-center items-center my-8">          
+            <div className="w-[75%] text-primary-accent text-xl font-ibm">          
                 <h4 className="mb-2 text-4xl">
                     <Link href={project.link}>
                         {project.title}
@@ -16,7 +16,7 @@ export default function Preview({ project }: ProjectData) {
                 {project.description}
               </p>
             </div>
-            <div className="w-[75%] ">
+            <div className="mt-3">
               <Link className="contents" href={project.link}>
                 <Image                 
                   src={project.preview} 
@@ -24,7 +24,7 @@ export default function Preview({ project }: ProjectData) {
                   layout="responsive" 
                   width={308} 
                   height={282}
-                  
+                  className="max-w-[600px] max-h-[400px] "
                 />
               </Link>
             </div>
