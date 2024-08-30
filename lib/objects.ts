@@ -229,8 +229,7 @@ export const oldProjects: Projects[] = [
 ];
 
 export const images = [  
-  '/Images/pom.jpg',
-  '/Images/pull.jpg',
+  '/Images/pom.jpg',  
   '/Images/bull.jpg',
   '/Images/billytable.jpg',
   '/Images/billyston.jpg',

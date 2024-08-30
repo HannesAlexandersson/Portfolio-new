@@ -14,7 +14,7 @@ export default function FooterClient(){
 
     return(
         <footer className="footer flex justify-center my-[15px] mx-0 flex-col-reverse items-center gap-[.8rem]">
-          <div className="copyright text-primary-accent">
+          <div className="copyright text-primary-accent select-none ">
             <p>{date}</p>
           </div>
           

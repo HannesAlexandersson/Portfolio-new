@@ -30,11 +30,8 @@ export default function Story(){
                                             <Image 
                                                 src={giphy} 
                                                 alt="mixing antibiotic at night" 
-                                                layout='responsive'
-                                                width={628}
-                                                height={353}  
-                                                className='rounded-[22px] w-[95%]'                                               
-                                            />
+                                                className='rounded-[22px] w-full h-full object-cover object-center'                                               
+                                            />                                             
                                         </div>
                                     </div>
                                 </div>
@@ -59,9 +56,9 @@ export default function Story(){
                     
                 </section>
                 <section className="px-8 md:px-16 mt-32">
-                    <span><h1 className="mb-8 text-4xl font-ibm">A new life</h1></span>
+                    <span><h1 className="mb-8 text-4xl font-ibm select-none ">A new life</h1></span>
                     <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl select-none  '>
                         So back to the school life for me it was! Having 4 years of university studies in the back I do have some experience in how to study.
                         But what dont have is programming experience. As I said earlier I wrote my first &ldquo;Hello World&ldquo; about 4 months before I got in at Yrgo school. 
                         Lucky me, that I have fell in love with programming. Safe to say that Im doing my best to try and level the playing field sort of say. I spend almost all my 
@@ -74,7 +71,7 @@ export default function Story(){
             <section className="px-8 md:px-16 mt-32 mb-4">
                     <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
                     
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl select-none  '>
                         In my spare time I love the outdoors! I take every chance I get to go out in the woods, camping and fishing or just hiking.
                         I have a little companion in the form of my dog Billy Bob Thornton. If I could I would also take my cats, but always
                         they dont enjoy the outdoors as much as I do! 
@@ -82,7 +79,7 @@ export default function Story(){
 
                         
 
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl select-none  '>
                         I live with my beautiful wife and 2 daughters. We try to travel and see the world as often as we can. 
                         unfortunately the kids are growing and doesn&rsquo;t seem to want to spend as much time with their old parents as they
                         used to do. 
@@ -90,14 +87,14 @@ export default function Story(){
 
                         
 
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl  select-none '>
                         I very much enjoy my Sage barista master. Its an manuel espresso brewer that brews a perfect espresso. It
                         takes a bit of training, but the journey was well worth it as Im now enjoying café quality coffee every day!
                         </p>
 
                         
 
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl select-none '>
                         Other than that, it isn&rsquo;t really much left to tell you about myself. I play videogames, I love football (änglarna),
                         and enjoy the family life! Hopefully well get to know one another soon enough when you hire me! 
                         </p>

@@ -11,3 +11,4 @@ export function createCopyright(): string {
 export function createCopyMark(): string {
     return "©"; 
 }
+
