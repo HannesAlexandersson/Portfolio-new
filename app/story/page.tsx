@@ -1,21 +1,22 @@
 import Image from 'next/image';
 import Slider from '@/components/Slider';
 import giphy from '@/public/Giphy/giphy.gif';
+import { images } from '@/lib/objects';
 
 export default function Story(){
 
     return(
-        <main>
-            <div className="relative text-primary-accent flex flex-row flex-wrap justify-center items-center mx-auto p-20 gap-12 top-8">
-                <section className="divider">
+        
+            <main className="relative text-primary-accent flex flex-row flex-wrap justify-center items-center section-contain">
+                <section className="px-8 md:px-16 mt-32">
                     <span>
                         <h1 className="mb-8 text-4xl font-ibm">
-                            A life in the shadows
+                            A whole life backwards
                         </h1>
                     </span>                   
-                    <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
+                    <span className="flex flex-row flex-wrap justify-center gap-8 font-bebas">
                         <p className='text-primary-accent text-xl '>
-                            About 20 years. Thats how long I have worked as a nurse in the hospital by night.
+                            About 20 years. Thats how long I have worked as a nurse in the hospital by night. Sleeping during the day and working during the night.
                             There have been ups and there have been downs. From the beginning as a novice learning the trade,
                             To big anticlimax that was the global pandemic. I&rsquo;ve pushed myself through one of the toughest further education
                             there is for a nurse in sweden and became an specialist nurse in anesthesia 2016.  
@@ -25,13 +26,14 @@ export default function Story(){
                             <div className="border-wrapperBlack1">
                                 <div className="border-wrapperWhite">
                                     <div className="border-wrapperBlack2">                                    
-                                        <div className="flex justify-center items-center shadow-md overflow-hidden">
+                                        <div className="flex justify-center items-center overflow-hidden">
                                             <Image 
                                                 src={giphy} 
                                                 alt="mixing antibiotic at night" 
                                                 layout='responsive'
                                                 width={628}
-                                                height={353}                                                 
+                                                height={353}  
+                                                className='rounded-[22px] w-[95%]'                                               
                                             />
                                         </div>
                                     </div>
@@ -56,7 +58,7 @@ export default function Story(){
                     </span>
                     
                 </section>
-                <section className="divider">
+                <section className="px-8 md:px-16 mt-32">
                     <span><h1 className="mb-8 text-4xl font-ibm">A new life</h1></span>
                     <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
                         <p className='text-primary-accent text-xl '>
@@ -69,7 +71,7 @@ export default function Story(){
                     </span>
                 </section>
 
-            <section className="divider">
+            <section className="px-8 md:px-16 mt-32 mb-4">
                     <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
                     
                         <p className='text-primary-accent text-xl '>
@@ -108,14 +110,14 @@ export default function Story(){
                     <div className="border-wrapperBlack1">
                         <div className="border-wrapperWhite">
                             <div className="border-wrapperBlack2">    
-                                <div className="h-[100svh] w-[90svw] m-0 overflow-hidden relative bg-default-bg ">
-                                    <Slider />                                    
+                                <div className="h-[80svh] w-[90svw] m-0 overflow-hidden relative bg-default-bg rounded-[22px] ">                                    
+                                    <Slider images={images} />                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            
+            </main>
     );
 }

@@ -90,7 +90,7 @@ export default function Cv(){
 
                 <div className="mt-16">
                     <h2 className="text-center text-4xl font-bold text-[#0ef] mb-4">Curriculum Vitae</h2>
-                    <iframe src="/PDF/HannesCV.pdf" className="w-full h-[600px]" />
+                    <iframe src="/PDF/HannesCV.pdf" className="w-full min-h-[600px]" />
                 </div>
     
   

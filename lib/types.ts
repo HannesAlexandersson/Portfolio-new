@@ -36,3 +36,7 @@ export interface ProjectCardsProps {
     projectData: Projects[];
     thirdSemester: Projects[];
 }
+
+export interface Sliderimages{
+    images: string[];    
+}

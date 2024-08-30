@@ -1,30 +1,14 @@
 'use client'
 
-import { useRef, useState, useCallback } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import useEventListener from '../hooks/useEventListener';
 import Image from 'next/image';
+import { Sliderimages } from '@/lib/types';
 
-const images = [
-    '/public/images/pull.jpg',
-    '/public/images/bull.jpg',
-    '/public/images/billytable.jpg',
-    '/public/images/billyston.jpg',
-    '/public/images/billyLake.webp',
-    '/public/images/pom.jpg',
-    '/public/images/tent.webp',
-    '/public/images/paddle.webp',
-    '/public/images/locht.jpg',
-    '/public/images/barnskrid.webp',
-    '/public/images/barne.jpeg',
-    '/public/images/fatboy.jpg',
-    '/public/images/tripplecoffe.webp',
-    '/public/images/caposhino.jpg',
-    '/public/images/hannes.jpg',
-    '/public/images/hannes3.webp',
-    '/public/images/sunset.webp'
-  ];
 
-  const Slider: React.FC = () => {
+
+
+  const Slider: React.FC<Sliderimages> = ({ images }) => {
     const trackRef = useRef<HTMLDivElement>(null);
     const [mouseDownAt, setMouseDownAt] = useState<number>(0);
     const [prevPercentage, setPrevPercentage] = useState<number>(0);
@@ -68,36 +52,59 @@ const images = [
       }
     }, [mouseDownAt, prevPercentage]);
   
-    useEventListener('mousedown', handleOnDown as EventListener, window);
+    /* useEventListener('mousedown', handleOnDown as EventListener, window);
     useEventListener('mouseup', handleOnUp as EventListener, window);
     useEventListener('mousemove', handleOnMove as EventListener, window);
   
     useEventListener('touchstart', handleOnDown as EventListener, window);
     useEventListener('touchend', handleOnUp as EventListener, window);
-    useEventListener('touchmove', handleOnMove as EventListener, window);
+    useEventListener('touchmove', handleOnMove as EventListener, window); */
+
+    // Use useEffect to safely access window and add event listeners
+    /* useEffect(() => {
+      if (typeof window !== 'undefined') {
+          useEventListener('mousedown', handleOnDown as EventListener, window);
+          useEventListener('mouseup', handleOnUp as EventListener, window);
+          useEventListener('mousemove', handleOnMove as EventListener, window);
+
+          useEventListener('touchstart', handleOnDown as EventListener, window);
+          useEventListener('touchend', handleOnUp as EventListener, window);
+          useEventListener('touchmove', handleOnMove as EventListener, window);
+      }
+  }, [handleOnDown, handleOnUp, handleOnMove]); */
+
+  // Call the custom useEventListener hook at the top level of your component
+  useEventListener('mousedown', handleOnDown as EventListener, typeof window !== 'undefined' ? window : null);
+  useEventListener('mouseup', handleOnUp as EventListener, typeof window !== 'undefined' ? window : null);
+  useEventListener('mousemove', handleOnMove as EventListener, typeof window !== 'undefined' ? window : null);
+
+  useEventListener('touchstart', handleOnDown as EventListener, typeof window !== 'undefined' ? window : null);
+  useEventListener('touchend', handleOnUp as EventListener, typeof window !== 'undefined' ? window : null);
+  useEventListener('touchmove', handleOnMove as EventListener, typeof window !== 'undefined' ? window : null);
+
+    
   
     return (
       <div
         ref={trackRef}
-        className="relative flex overflow-hidden gap-[4vmin]"
+        className="absolute flex overflow-hidden gap-[4vmin] select-none"
         style={{ 
           left: '50%',
           top: '50%',
+          /* transform: `translate(0%, -50%)`, */
           transform: `translate(${prevPercentage}%, -50%)`,
           userSelect: 'none'
         }}
       >
+       
         {images.map((src, index) => (
-          <div key={index} className="relative flex-shrink-0">
+          <div key={index} className="w-[60vmin] h-[76vmin] ">
             <Image
               src={src}
-              alt={`Slide ${index}`}
-              layout="intrinsic"
-              width={60} // Width in vmin
-              height={76} // Height in vmin
-              objectFit="cover"
-              objectPosition="100% center"
-              className="w-[60vmin] h-[76vmin]"
+              alt={`Slide ${index}`}              
+              width={300} // Width in vmin
+              height={600} // Height in vmin              
+              className='object-cover object-center-[100%] w-full h-full'
             />
           </div>
         ))}
