@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { ProjectCardsProps, Projects } from '@/lib/types';
 
+
 const ProjectCards: React.FC<ProjectCardsProps> = ({ oldProjects, projectData, thirdSemester }) => {
     const cardRef = useRef<HTMLDivElement>(null);
   
@@ -35,7 +36,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ oldProjects, projectData, t
       <>
         <h1 className="text-3xl font-bold text-primary-accent mb-8">{title}</h1>
         {Object.entries(projects).map(([name, project]) => (
-          <div key={name} className="outer-container bg-secondary-bg border-2 border-secondary-accent rounded-tl-3xl rounded-br-3xl flex flex-col items-center justify-center relative w-1/2 gap-4 bg-[url('/tree.png')] bg-fixed bg-center bg-no-repeat bg-cover bg-clip-content">
+          <div key={name} className="outer-container bg-secondary-bg border-2 border-secondary-accent rounded-tl-3xl rounded-br-3xl flex flex-col items-center justify-center relative w-1/2 gap-4 bg-treeBg bg-fixed bg-center bg-no-repeat bg-cover bg-clip-content">
             <p className="card-title text-xl text-primary-accent">{project.Name}</p>
             <a href={project.Url}>
               <div

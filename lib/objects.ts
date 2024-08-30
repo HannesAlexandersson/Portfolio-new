@@ -1,11 +1,11 @@
 import { NavLink, ProjectProps, Projects, Sliderimages } from './types';
 
 export const navLinks: NavLink[] = [
-    { href: '/', text: 'Home', icon: '/navIcons/home.svg' },
-    { href: '/collection', text: 'Collection', icon: '/navIcons/collection.svg' },
-    { href: '/cv', text: 'CV', icon: '/navIcons/resume.svg' },
-    { href: '/story', text: 'My Story', icon: '/navIcons/story.svg' },
-    { href: '/contact', text: 'Contact Me', icon: '/navIcons/contact.svg' },
+    { href: '/', text: 'Home', icon: '/Navicons/home.svg' },
+    { href: '/collection', text: 'Collection', icon: '/Navicons/collection.svg' },
+    { href: '/cv', text: 'CV', icon: '/Navicons/resume.svg' },
+    { href: '/story', text: 'My Story', icon: '/Navicons/story.svg' },
+    { href: '/contact', text: 'Contact Me', icon: '/Navicons/contact.svg' },
   ];
 
 export const frontPagePreview: ProjectProps[] = [
@@ -13,7 +13,7 @@ export const frontPagePreview: ProjectProps[] = [
       title: "Konstiga Måsen",
       description: "Why dont start with the latest project? In Konstiga måsen we worked alongside the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react for the frontend and becouse of that we didnt really see any need of an backend we settle on using Contentful for handling the 'backend'",
       link: "https://sammanslaget-green.vercel.app/",
-      preview: "/Screens/masen.png",
+      preview: "/Screens/masen1.png",
     },
     {
       title: "Mormor och jag",
@@ -25,7 +25,7 @@ export const frontPagePreview: ProjectProps[] = [
       title: "Svenska krögare",
       description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer. This is my first actual web-dev job that I actually created something that is being used on a daily basis and earned me some sweet sweet cash!",
       link: "https://www.krogare.se/",
-      preview: "/screens/krogare.png",
+      preview: "/Screens/krogare.png",
     },
     {
       title: "Branchevent",
