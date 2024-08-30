@@ -3,11 +3,12 @@
 import { useRef, useState, useCallback } from 'react';
 import useEventListener from '../hooks/useEventListener';
 import Image from 'next/image';
-import { images } from '@/lib/objects';
+import { Sliderimages } from '@/lib/types';
 
 
 
-  const Slider: React.FC = () => {
+
+  const Slider: React.FC<Sliderimages> = ({ images }) => {
     const trackRef = useRef<HTMLDivElement>(null);
     const [mouseDownAt, setMouseDownAt] = useState<number>(0);
     const [prevPercentage, setPrevPercentage] = useState<number>(0);
@@ -58,29 +59,33 @@ import { images } from '@/lib/objects';
     useEventListener('touchstart', handleOnDown as EventListener, window);
     useEventListener('touchend', handleOnUp as EventListener, window);
     useEventListener('touchmove', handleOnMove as EventListener, window);
+
+    
   
     return (
       <div
         ref={trackRef}
-        className="relative flex overflow-hidden gap-[4vmin]"
+        className="absolute flex overflow-hidden gap-[4vmin] select-none"
         style={{ 
           left: '50%',
           top: '50%',
+          /* transform: `translate(0%, -50%)`, */
           transform: `translate(${prevPercentage}%, -50%)`,
           userSelect: 'none'
         }}
       >
+       
         {images.map((src, index) => (
-          <div key={index} className="relative flex-shrink-0">
+          <div key={index} className="w-[60vmin] h-[76vmin] ">
             <Image
               src={src}
               alt={`Slide ${index}`}
               layout="intrinsic"
-              width={60} // Width in vmin
-              height={76} // Height in vmin
+              width={300} // Width in vmin
+              height={600} // Height in vmin
               objectFit="cover"
               objectPosition="100% center"
-              className="w-[60vmin] h-[76vmin]"
+              className='object-cover object-center-[100%] w-full h-full'
             />
           </div>
         ))}

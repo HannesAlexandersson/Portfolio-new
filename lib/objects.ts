@@ -1,4 +1,4 @@
-import { NavLink, ProjectProps, Projects } from './types';
+import { NavLink, ProjectProps, Projects, Sliderimages } from './types';
 
 export const navLinks: NavLink[] = [
     { href: '/', text: 'Home', icon: '/navIcons/home.svg' },
@@ -213,22 +213,23 @@ export const oldProjects: Projects[] = [
   }
 ];
 
-export const images = [
-  '/public/images/pull.jpg',
-  '/public/images/bull.jpg',
-  '/public/images/billytable.jpg',
-  '/public/images/billyston.jpg',
-  '/public/images/billyLake.webp',
-  '/public/images/pom.jpg',
-  '/public/images/tent.webp',
-  '/public/images/paddle.webp',
-  '/public/images/locht.jpg',
-  '/public/images/barnskrid.webp',
-  '/public/images/barne.jpeg',
-  '/public/images/fatboy.jpg',
-  '/public/images/tripplecoffe.webp',
-  '/public/images/caposhino.jpg',
-  '/public/images/hannes.jpg',
-  '/public/images/hannes3.webp',
-  '/public/images/sunset.webp'
+export const images = [  
+  '/Images/pom.jpg',
+  '/Images/pull.jpg',
+  '/Images/bull.jpg',
+  '/Images/billytable.jpg',
+  '/Images/billyston.jpg',
+  '/Images/billyLake.jpg',
+  '/Images/cat.jpg',
+  '/Images/tent.jpg',
+  '/Images/paddle.jpg',
+  '/Images/locht.jpg',
+  '/Images/barnskrid.jpg',
+  '/Images/barne.jpeg',
+  '/Images/fatboy.jpg',
+  '/Images/tripplecoffe.jpg',
+  '/Images/caposhino.jpg',
+  '/Images/hannes.jpg',
+  '/Images/hannes3.jpg',
+  '/Images/sunset.jpg'
 ];
