@@ -52,26 +52,7 @@ import { Sliderimages } from '@/lib/types';
       }
     }, [mouseDownAt, prevPercentage]);
   
-    /* useEventListener('mousedown', handleOnDown as EventListener, window);
-    useEventListener('mouseup', handleOnUp as EventListener, window);
-    useEventListener('mousemove', handleOnMove as EventListener, window);
-  
-    useEventListener('touchstart', handleOnDown as EventListener, window);
-    useEventListener('touchend', handleOnUp as EventListener, window);
-    useEventListener('touchmove', handleOnMove as EventListener, window); */
-
-    // Use useEffect to safely access window and add event listeners
-    /* useEffect(() => {
-      if (typeof window !== 'undefined') {
-          useEventListener('mousedown', handleOnDown as EventListener, window);
-          useEventListener('mouseup', handleOnUp as EventListener, window);
-          useEventListener('mousemove', handleOnMove as EventListener, window);
-
-          useEventListener('touchstart', handleOnDown as EventListener, window);
-          useEventListener('touchend', handleOnUp as EventListener, window);
-          useEventListener('touchmove', handleOnMove as EventListener, window);
-      }
-  }, [handleOnDown, handleOnUp, handleOnMove]); */
+   
 
   // Call the custom useEventListener hook at the top level of your component
   useEventListener('mousedown', handleOnDown as EventListener, typeof window !== 'undefined' ? window : null);
@@ -113,3 +94,24 @@ import { Sliderimages } from '@/lib/types';
   };
   
   export default Slider;
+
+   /* useEventListener('mousedown', handleOnDown as EventListener, window);
+    useEventListener('mouseup', handleOnUp as EventListener, window);
+    useEventListener('mousemove', handleOnMove as EventListener, window);
+  
+    useEventListener('touchstart', handleOnDown as EventListener, window);
+    useEventListener('touchend', handleOnUp as EventListener, window);
+    useEventListener('touchmove', handleOnMove as EventListener, window); */
+
+    // Use useEffect to safely access window and add event listeners
+    /* useEffect(() => {
+      if (typeof window !== 'undefined') {
+          useEventListener('mousedown', handleOnDown as EventListener, window);
+          useEventListener('mouseup', handleOnUp as EventListener, window);
+          useEventListener('mousemove', handleOnMove as EventListener, window);
+
+          useEventListener('touchstart', handleOnDown as EventListener, window);
+          useEventListener('touchend', handleOnUp as EventListener, window);
+          useEventListener('touchmove', handleOnMove as EventListener, window);
+      }
+  }, [handleOnDown, handleOnUp, handleOnMove]); */
