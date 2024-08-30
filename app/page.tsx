@@ -49,7 +49,7 @@ export default function Home() {
             <h2 className="text-5xl font-ibm text-[#f3e1c7]">Recent projects:</h2>
           </div>
           
-        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14">   
+        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-32">   
 
           {frontPagePreview.map((project) => (
             <Preview key={project.title} project={project} />
