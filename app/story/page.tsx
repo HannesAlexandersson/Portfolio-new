@@ -3,6 +3,7 @@ import Slider from '@/components/Slider';
 import giphy from '@/public/Giphy/giphy.gif';
 import { images } from '@/lib/objects';
 
+
 export default function Story(){
 
     return(
@@ -38,14 +39,14 @@ export default function Story(){
                             </div>
                         </div>
 
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl autoShow'>
                             Always awake when everybody else was asleep. Butchering my own social-life in the progress. 
                             Now I&rsquo;ve come to the conclusion that I need something else in my life. Seeing as I&rsquo;ve always 
                             had an interest and passion for programming and computer in general, the choice was easy. 
                             So in january of 2023 I wrote my very first &ldquo;Hello World&ldquo;! 
                         </p>
 
-                        <p className='text-primary-accent text-xl '>
+                        <p className='text-primary-accent text-xl  autoShow'>
                             From that point everything started to move very fast. I had to provide eligibility for most of the 
                             educations I had in mind, so the very first step was to enroll in an pre eligibility class for adults. 
                             I hadn&rsquo;t even gotten my grades when the big eligibility tests for the actual code Academy came around.
@@ -56,8 +57,10 @@ export default function Story(){
                     
                 </section>
                 <section className="px-8 md:px-16 mt-32">
-                    <span><h1 className="mb-8 text-4xl font-ibm select-none ">A new life</h1></span>
-                    <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
+                    <span className=' autoShow'>
+                        <h1 className="mb-8 text-4xl font-ibm select-none ">A new life</h1>
+                    </span>
+                    <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas  autoShow">
                         <p className='text-primary-accent text-xl select-none  '>
                         So back to the school life for me it was! Having 4 years of university studies in the back I do have some experience in how to study.
                         But what dont have is programming experience. As I said earlier I wrote my first &ldquo;Hello World&ldquo; about 4 months before I got in at Yrgo school. 
@@ -69,7 +72,7 @@ export default function Story(){
                 </section>
 
             <section className="px-8 md:px-16 mt-32 mb-4">
-                    <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas">
+                    <span className="flex flex-row flex-wrap justify-center gap-4 font-bebas  autoShow">
                     
                         <p className='text-primary-accent text-xl select-none  '>
                         In my spare time I love the outdoors! I take every chance I get to go out in the woods, camping and fishing or just hiking.
