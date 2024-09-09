@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { EventHandler, useEffect, useRef } from 'react'
 
-const useClickAway = handler => {
-  const ref = useRef()
+const useClickAway = (handler: () => void) => {
+  const ref = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
-    const handleClickOutside = ev => {
-      if (ref.current && !ref.current.contains(ev.target)) {
+    const handleClickOutside = (ev: MouseEvent) => {
+      if (ref.current && !ref.current.contains(ev.target as Node)) {
         handler()
       }
     }
