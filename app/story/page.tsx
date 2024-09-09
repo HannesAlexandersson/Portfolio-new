@@ -12,7 +12,7 @@ export default function Story(){
                 <section className="px-8 md:px-16 mt-32">
                     <span>
                         <h1 className="mb-8 text-4xl font-ibm">
-                            A whole life backwards
+                            Caring for others
                         </h1>
                     </span>                   
                     <span className="flex flex-row flex-wrap justify-center gap-8 font-bebas">
