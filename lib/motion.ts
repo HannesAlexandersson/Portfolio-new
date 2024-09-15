@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export interface Variant {
   hidden: {
     x?: number | string;
@@ -23,7 +25,7 @@ export interface Variant {
 
 
 
-export const textVariant = (delay: number): Variant => {
+export const textVariant = (delay: number): Variants => {
   return {
     hidden: {
       y: -50,
