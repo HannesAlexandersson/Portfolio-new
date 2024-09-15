@@ -16,8 +16,8 @@ export default function Home() {
       
       <div className="mt-20 mb-40 flex justify-center items-center flex-col ">
           
-          <div id="about" className="flex justify-center items-center mt-8 mb-4">
-            <h2 className="text-5xl font-ibm text-[#f3e1c7]">Senaste projekt:</h2>
+          <div id="about" className="flex flex-wrap justify-center items-center mt-8 mb-4 mx-12">
+            <h2 className="text-5xl font-ibm text-[#f3e1c7] ">Mina senaste projekt:</h2>
           </div>
           
         <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-32">   
