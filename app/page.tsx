@@ -11,7 +11,34 @@ export default function Home() {
       <div className="bg-secondary-pattern bg-cover bg-no-repeat bg-center w-screen h-screen">
 
       <Hero />
-      {/*
+      
+      </div>
+      
+      <div className="mt-20 mb-40 flex justify-center items-center flex-col ">
+          
+          <div id="about" className="flex justify-center items-center mt-8 mb-4">
+            <h2 className="text-5xl font-ibm text-[#f3e1c7]">Senaste projekt:</h2>
+          </div>
+          
+        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-32">   
+
+          {frontPagePreview.map((project) => (
+            <Preview key={project.title} project={project} />
+          ))}
+
+        </div>
+      </div>
+
+      <div className="text-center py-8 px-12 font-ibm text-primary-accent ">
+            <p>Om du vill utforska alla mina olika sidor så kan du kolla på kollektion-sidan!</p>
+      </div>
+
+      <hr />
+    </main>
+  );
+}
+
+{/*OLD HERO
             <div className="outer-white mr-8">
               <div className="outer-black-thick">
                 <div className="outer-white-thin">
@@ -51,28 +78,3 @@ export default function Home() {
               </div>
             </div>
 */}
-      </div>
-      
-      <div className="mt-20 mb-40 flex justify-center items-center flex-col ">
-          
-          <div id="about" className="flex justify-center items-center mt-8 mb-4">
-            <h2 className="text-5xl font-ibm text-[#f3e1c7]">Recent projects:</h2>
-          </div>
-          
-        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-32">   
-
-          {frontPagePreview.map((project) => (
-            <Preview key={project.title} project={project} />
-          ))}
-
-        </div>
-      </div>
-
-      <div className="text-center py-8 px-12 font-ibm text-primary-accent ">
-            <p>if you want to explore all of the different sites, then head over to the collection page!</p>
-      </div>
-
-      <hr />
-    </main>
-  );
-}
