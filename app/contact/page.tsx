@@ -6,7 +6,7 @@ export default function Contact(){
       
 
 return(
-    <main className="px-8 md:-px-32"> 
+    <main className="px-8 md:px-32"> 
      
         <div className="wrapper flex flex-col items-center justify-center">
              

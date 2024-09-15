@@ -41,7 +41,7 @@ export const textVariant = (delay: number): Variant => {
   };
 };
 
-export const fadeIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number): Variant => {
+export const fadeIn = (direction: 'left' | 'right' | 'up' | 'down' | "", type: string, delay: number, duration: number): Variant => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
