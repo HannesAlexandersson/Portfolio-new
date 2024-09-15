@@ -59,7 +59,7 @@ export default function Cv(){
                         <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Professionella kunskaper</h2>
                         <div className="flex flex-wrap justify-around">
                         {professionalSkills.map((skill, index) => (
-                            <div key={index} className="w-1/2 mb-8 text-center">
+                            <div key={index} className="w-1/2 mb-8 text-center mx-4">
                             <div className="relative inline-block">
                                 <FaRegCircle className="w-32 h-32 text-[#0ef]" />
                                 <svg className="w-32 h-32 absolute top-0 left-0" viewBox="0 0 32 32">
