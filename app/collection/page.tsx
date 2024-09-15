@@ -1,8 +1,14 @@
 import ProjectCards from "@/components/ProjectCards";
 import { projectData, oldProjects, thirdSemester } from "@/lib/objects";
+import Works from "@/components/Works";
 
 function Collection(){
-
+    return(
+        <main className="relative text-primary-accent flex flex-row flex-wrap justify-start items-center section-contain mt-28">
+            <Works />            
+        </main>
+    )
+/* 
     return(
         <div>
             <div className="flex flex-col justify-center items-center my-24 px-12">
@@ -18,6 +24,7 @@ function Collection(){
             <ProjectCards oldProjects={oldProjects} projectData={projectData} thirdSemester={thirdSemester} />
         </div>
     );
+     */
 }
 
 export default Collection;

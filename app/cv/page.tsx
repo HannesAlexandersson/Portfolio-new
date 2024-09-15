@@ -18,10 +18,10 @@ export default function Cv(){
       ];
     
       const professionalSkills = [
-        { name: 'Teamwork', percentage: '90%', animationName: 'animate-path1' },
-        { name: 'Problem Solving', percentage: '70%', animationName: 'animate-path2' },
-        { name: 'Creativity', percentage: '70%', animationName: 'animate-path3' },
-        { name: 'Communication', percentage: '90%', animationName: 'animate-path4' },
+        { name: 'Samarbete', percentage: '90%', animationName: 'animate-path1' },
+        { name: 'Problemlösning', percentage: '70%', animationName: 'animate-path2' },
+        { name: 'Kreativitet', percentage: '70%', animationName: 'animate-path3' },
+        { name: 'Kommunikation', percentage: '90%', animationName: 'animate-path4' },
       ];
 
     return(
@@ -29,13 +29,13 @@ export default function Cv(){
         <main className="bg-[#081b29] text-white p-8 font-bebas">
             <div className="pt-12">  
                 <h1 className="text-center text-5xl font-bold mb-4">
-                    My <span className="text-[#0ef]">skills</span>
+                    Mina <span className="text-[#0ef]">färdigheter</span>
                 </h1>
                 
                 <section className="flex flex-wrap">
                     <div className="w-full p-10" id="skills">
-                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Technical skills</h2>
-                        <p className="text-center text-lg mb-8">A visual representation of my own estimate of my programming skills. Based off my near peers at school</p>
+                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Tekniska kunskaper</h2>
+                        <p className="text-center text-lg mb-8">En visuell presentation av min egen helt godtyckliga uppskattning av mina programmerings kunskaper.</p>
                         <div className="space-y-10">
                         {technicalSkills.map((skill, index) => (
                             <div key={index} className="relative">
@@ -56,7 +56,7 @@ export default function Cv(){
                     </div>
 
                     <div className="w-full p-10">
-                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Professional skills</h2>
+                        <h2 className="text-center text-3xl font-bold mb-8 underline underline-offset-8 decoration-2">Professionella kunskaper</h2>
                         <div className="flex flex-wrap justify-around">
                         {professionalSkills.map((skill, index) => (
                             <div key={index} className="w-1/2 mb-8 text-center">

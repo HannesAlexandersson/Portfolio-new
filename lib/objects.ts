@@ -1,46 +1,46 @@
 import { NavLink, ProjectProps, Projects, Sliderimages } from './types';
 
 export const navLinks: NavLink[] = [
-    { href: '/', text: 'Home', icon: '/Navicons/home.svg' },
-    { href: '/collection', text: 'Collection', icon: '/Navicons/collection.svg' },
+    { href: '/', text: 'Hem', icon: '/Navicons/home.svg' },
+    { href: '/collection', text: 'Kollektion', icon: '/Navicons/collection.svg' },
     { href: '/cv', text: 'CV', icon: '/Navicons/resume.svg' },
-    { href: '/story', text: 'My Story', icon: '/Navicons/story.svg' },
-    { href: '/contact', text: 'Contact Me', icon: '/Navicons/contact.svg' },
+    { href: '/story', text: 'Historia', icon: '/Navicons/story.svg' },
+    { href: '/contact', text: 'Kontakt', icon: '/Navicons/contact.svg' },
   ];
 
 export const frontPagePreview: ProjectProps[] = [
     {
       title: "Konstiga Måsen",
-      description: "Why dont start with the latest project? In Konstiga måsen we worked alongside the scriptwriters and ux designer students to create an application for children with the goal of on one hand teach them about the art culture of Lindholmen and on the other hand be a fun way for the family to get to know the neighborhood. The app is built in react for the frontend and since we didnt really have any need of an backend we settled on using Contentful for handling the 'backend'",
+      description: "Varför inte starta med det senaste projektet vi har haft på Yrgo? I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn, med målet att å ena sidan lära dem om kulturen på Lindholmen och å andra sidan på ett roligt och lekfullt vis informera både barnen och deras föräldrar om deras närområde. Appen är byggd i React och eftersom vi inte såg något egentligt behov av en backend så nöjde vi oss med att använda Contenful CMS som 'backend'.",
       link: "https://sammanslaget-green.vercel.app/",
       preview: "/Screens/masen1.png",
     },
     {
       title: "Mormor och jag",
-      description: "A site I built for my wife using next.js and Sanity CMS. She uses it to sell stuff she creates, like ceramiks and clothing.",
+      description: "En sida jag byggde åt min fru med Next.js och Sanity CMS. Hon använder den till att sälja saker som hon pysslat, sytt och drejat.",
       link: "https://mormorochjag.vercel.app/",
       preview: "/Screens/mojagScren.png",
     },
     {
       title: "Svenska krögare",
-      description: "During the summer of 2024 me and a classmate where employed by the Svenska krögare to create and launch a new website for them. We built the page in next.js and used Contentful as CMS for the customer. This is my first actual web-dev job that I actually created something that is being used on a daily basis and earned me some sweet sweet cash!",
+      description: "Under sommaren 2024 så fick jag och en klasskamrat i uppdrag att skapa en helt ny hemsida åt 'Svenska krögare'. Vi byggde sidan i Next.js och använde Contentful som CMS åt kunden. Detta var mitt första riktiga uppdrag som webbutvecklare där jag faktiskt skapade något som sedan används på en daglig basis och som jag sedan fick betalt för.!",
       link: "https://www.krogare.se/",
       preview: "/Screens/krogare.png",
     },
     {
       title: "Branchevent",
-      description: "In Branchevent The webdevs and the digital designers joined forces to develop an application for the big LIA (internship) event hosted by Yrgo. Each group where to develop their own interpretation of Yrgos style, while still submit and operational sign up application. We developed an matching app where the students could match with the companies attending to find the companies that liked the same techstachs as the students. Its built in react for the frontend and we built an node express rest api for the backend",
+      description: "I Branchevent så samarbetade vi med Digital Design studenterna för att skapa en application det stora LIA eventet som Yrgo hostade. Varje grupp med studenter tävlade mot varandra i att skapa en app där företag och studenter dels kunde anmäla sig till eventet men även (i vårt fall) skulle kunna matcha med varandra baserat på vilka preferenser man har. Det vinnande bidraget användes sedan i inbjudan till eventet. Vi byggde appen i React och använde supabase som backend.",
       link: "https://liameetup.vercel.app/",
       preview: "/Screens/branchevent.svg",
     },
     {
       title: "Protech",
       description:
-        "Protech was a joint effort project in wich we, the web devs, joined forces with the Digital Design and Graphical Artist students to create a landing page for a fictive product. the GA-students created the products, the designers designed the layout, and we the web devs made it a reality! Since this was early on the stach only contain html, css and vanilla JS. Unfortunatly I dont have hosting for my php projects atm.",
+        "Protech är visserligen inget av de nyaste projektet utan snarare ett av de första vi hade. Även i detta projekt arbetade vi sida vid sida med Digital design studenterna. Vi skulle bygga en landingpage för ett fiktivt företag och promota fiktiva produkter. Produkterna hade Graphical Computer Artist studenterna gjort. Vårt 'företag' sålde musik produkter. På grund av att det var så tidigt i utbildningen så är sidan byggd i php med lite vanilla JS strösslat här och där. ",
       link: "https://www.alexanderochson.se/Protech/",
       preview: "/Screens/Group 66.svg",
     },
-    {
+    /* {
       title: "Retronautica",
       description:
         "Retronautica was a project in the course Digital Design where we was supposed to create a website for our own dream cinema. Me and my project partner Liv both love fantasy and science fiction, so ofcourse we made a science fiction cinema who only plays old classics! It contains a landing page and a event page for 2000 A space odysee´. Again very early work and thus a lightweight stach of html, css and JS. Another project I cant host atm.",
@@ -53,7 +53,7 @@ export const frontPagePreview: ProjectProps[] = [
         "Yrgopelago was a project we had over christmas 2023. It was a contest among the students of the class, where we each made a fictive hotel in the  fictive archopelago of Yrgopelago. We then all got 100 dollars each wich we could then spend on eachothers hotels. The student who had the most money on the end of the day won! In this project I used php and sqlite to handle the backend while the frontend is basic html and css with a little JS sprinkled in. To bad I cant host this atm.",
       link: "https://www.alexanderochson.se/Yrgopelago/",
       preview: "/Screens/Group 62.svg",
-    },
+    }, */
   ]
 
 export const thirdSemester: Projects[] = [
