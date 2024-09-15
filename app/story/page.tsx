@@ -5,6 +5,7 @@ import { storyIntro, storyTextSections, storySub1, storySub2, storySub3 } from '
 import StoryBoard from '@/components/StoryBoard';
 import ServiceCard from '@/components/ServiceCard';
 import { services } from '@/lib/constants';
+import Experience from '@/components/Timeline';
 
 
 export default function Story(){
@@ -46,6 +47,10 @@ export default function Story(){
 
             <section className="mt-16 w-full">
                 <StoryBoard textsections={storySub3} />
+            </section>
+
+            <section className="mt-16 w-full h-full">
+                <Experience />
             </section>
         </main>
     );
