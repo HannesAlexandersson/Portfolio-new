@@ -93,7 +93,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Här är ett litet urval av projekt jag har jobbat på. Eftersom jag fortfarande är student så är det mestadels skolprojekt.
-          Jag har även jobbat på några personliga projekt för vänner, samt ett riktigt jobb för 'Svenska Krögare' där jag och en vän
+          Jag har även jobbat på några personliga projekt för vänner, samt ett riktigt jobb för &rsquo;Svenska Krögare&rsquo; där jag och en vän
           utvecklade en hemsida åt dem.           
         </motion.p>
       </div>
