@@ -10,6 +10,12 @@ import {
 } from "@/public/services/index";
 
 import {
+  teams,
+  snack,
+  pong,
+  water,
+  open,
+  finance,
   mojag,
   krogare,
   lia,
@@ -333,4 +339,89 @@ export const projects = [
     source_code_link: "https://github.com/HannesAlexandersson/typescriptProject",
     link: "https://typescript-project-three.vercel.app/",
   },
+  {
+    name: "Finance app",
+    description:
+    "Ett litet sidoprojekt där användaren kan knappa in en aktie och få tillbaka aktuell kurs. Tyvär fungerar hostingen för min webscraper väldigt dåligt och man måste ibland testa och vänta!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "express.js",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: finance,
+    source_code_link: "https://github.com/HannesAlexandersson/FinanceApp",
+    link: "https://finance-app-five-neon.vercel.app/",
+  },
+  {
+    name: "Waterworks",
+    description:
+    "Ett skolprojekt där vi använder ett API från Göteborgs stad för att visa nederbörd och vattennivåer från en rad olika mätstationer runt om i Göteborg. Byggd med Vanilla JS och plain html/css.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },      
+    ],
+    image: water,
+    source_code_link: "https://github.com/HannesAlexandersson/waterworks",
+    link: "https://waterworks-seven.vercel.app/",
+  },
+  {
+    name: "Pong",
+    description:
+    "Ett litet sidoprojekt där jag byggt en ping klon med vanilla js. I nuläget finns det enbart multiplayer läge.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },      
+    ],
+    image: pong,
+    source_code_link: "https://github.com/HannesAlexandersson/pong-game",
+    link: "https://pong-game-pi-nine.vercel.app/",
+  },
+  {
+    name: "Open API",
+    description:
+    "Det allra första skolprojektet där vi fick använda javascript. Vi skulle bygga en liten applikation som använder valfritt öppet API. Jag byggde en liten hub där jag sedan samlat alla applikationer jag byggt som använder olika API:er.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },      
+    ],
+    image: open,
+    source_code_link: "https://github.com/HannesAlexandersson/OpenAPI",
+    link: "https://alexanderochson.se/OpenAPI",
+  },
+  
 ];

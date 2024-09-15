@@ -11,7 +11,7 @@ export const navLinks: NavLink[] = [
 export const frontPagePreview: ProjectProps[] = [
     {
       title: "Konstiga Måsen",
-      description: "Varför inte starta med det senaste projektet vi har haft på Yrgo? I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn, med målet att å ena sidan lära dem om kulturen på Lindholmen och å andra sidan på ett roligt och lekfullt vis informera både barnen och deras föräldrar om deras närområde. Appen är byggd i React och eftersom vi inte såg något egentligt behov av en backend så nöjde vi oss med att använda Contenful CMS som 'backend'.",
+      description: "Vårt allra senaste projekt. I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn i Lindholmen, med målet att på ett roligt och lekfullt vis informera om deras närområde. Appen är byggd i React och Contenful.",
       link: "https://sammanslaget-green.vercel.app/",
       preview: "/Screens/masen1.png",
     },
