@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { ProjectCardsProps, Projects } from '@/lib/types';
 
 
@@ -38,7 +39,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ oldProjects, projectData, t
         {Object.entries(projects).map(([name, project]) => (
           <div key={name} className="outer-container bg-secondary-bg border-2 border-secondary-accent rounded-tl-3xl rounded-br-3xl flex flex-col items-center justify-center relative w-1/2 gap-4 bg-treeBg bg-fixed bg-center bg-no-repeat bg-cover bg-clip-content">
             <p className="card-title text-xl text-primary-accent">{project.Name}</p>
-            <a href={project.Url}>
+            <Link href={project.Url}>
               <div
                 className="card bg-white border border-black rounded p-6 transform translate-x-full opacity-0 transition-all duration-150 w-[30vw] h-[20vh] bg-cover bg-no-repeat relative"
                 style={{ backgroundImage: `url(${project.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -50,9 +51,9 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ oldProjects, projectData, t
                   </span>
                 </div>
               </div>
-            </a>
+            </Link>
             <p className="github text-lg text-primary-accent mt-2">
-              <a href={project.Github}>Github-&gt;</a>
+              <Link href={project.Github}>Github-&gt;</Link>
             </p>
           </div>
         ))}

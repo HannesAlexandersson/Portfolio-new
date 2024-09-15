@@ -9,6 +9,16 @@ import {
   scaffcalc,
 } from "@/public/services/index";
 
+import {
+  mojag,
+  krogare,
+  lia,
+  protech,
+  chuck,
+  retro,
+  tic,
+} from "@/public/projects/index";
+
 export interface storyTextSections {
   sectionSubText: string;
   sectionHeadText: string;
@@ -161,5 +171,166 @@ export const experiences = [
       "Testing and debugging code to ensure it works correctly.",
       "State management with Zustand Toolkit.",
     ],
+  },
+];
+
+export const projects = [
+  {
+    name: "Mormorochjag",
+    description:
+      "En kombinerad 'blog' och webshop för min frus hemmagjorda produkter.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sanity CMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: mojag,
+    source_code_link: "https://github.com/HannesAlexandersson/Mormorochjag",
+    link: "https://mormorochjag.vercel.app/",
+  },
+  {
+    name: "Svenska Krögare",
+    description:
+      "En komplett hemsida för Svenska krögare. Innehåller web-to-lead med nyhetsbrev och member subscription",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Contentful CMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: krogare,
+    source_code_link: "https://github.com/krogare/krogare",
+    link: "https://www.krogare.se/",
+  },
+  {
+    name: "LIA meetup",
+    description:
+      "En event sida för vårt LIA meetup event. Den låter studenter och företag matcha baserat på deras gemensamma tech preferenser.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: lia,
+    source_code_link: "https://github.com/HannesAlexandersson/Branshevent",
+    link: "https://liameetup.vercel.app/",
+  },
+  {
+    name: "Protech",
+    description:
+      "Ett skolprojekt där vi samarbetade med Digital design studenterna för att skapa en landingpage för ett fiktivt företag och product.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vanilla js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+    ],
+    image: protech,
+    source_code_link: "https://github.com/HannesAlexandersson/Protech",
+    link: "https://alexanderochson.se/Protech/",
+  },
+  {
+    name: "Chuck Norris joke generator",
+    description:
+      "Som vårt första React arbete skulle vi skriva en simpel app som använder valfritt öpett API. Vi valde att skapa en Chuck Norris joke generator.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: chuck,
+    source_code_link: "https://github.com/HannesAlexandersson/The-Chuck-Norris-generator",
+    link: "https://the-chuck-norris-generator.vercel.app/",
+  },
+  {
+    name: "Retronautica",
+    description:
+      "Ett av de allra första skol projekten. Det ör en landingpage och en detalj sida för en fiktiv biograf. Vi valde ett tema av sci-fi och retro för vår biograf.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vanilla js",
+        color: "pink-text-gradient",
+      },      
+    ],
+    image: retro,
+    source_code_link: "https://github.com/HannesAlexandersson/Retronautica",
+    link: "https://alexanderochson.se/Retronautica/",
+  },
+  {
+    name: "Tick Tack Toe",
+    description:
+      "Mitt allra typescript projekt. En skoluppgift där jag gjorde ett enkelt tic tac toe spel, komplett med AI och multiplayer mode.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },      
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },      
+    ],
+    image: tic,
+    source_code_link: "https://github.com/HannesAlexandersson/typescriptProject",
+    link: "https://typescript-project-three.vercel.app/",
   },
 ];
