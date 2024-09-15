@@ -18,6 +18,7 @@ const config: Config = {
         'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'heroBg': 'url("/backgrounds/bg-start.webp")',
         'treeBg': 'url("/tree.png")',
+        "secondary-pattern": "url('/space3.png')",
       },
       keyframes: {
         'infinite-scroll': {
@@ -44,6 +45,7 @@ const config: Config = {
       },
       boxShadow: {
         bottom: '0 4px 4px -4px rgba(0, 0, 0, 0.1)',
+        card: "0px 35px 120px -15px #211e35",
       },
       colors: {
         'linkedIn-blue': '#0A66C2',
@@ -52,6 +54,15 @@ const config: Config = {
         "primary-accent": '#f3e1c7',
         "default-bg": '#161415',
         "secondary-accent": '#f45325',
+        primary: "#050816",
+        secondary: "#aaa6c3",
+        tertiary: "#151030",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
+      },
+      screens: {
+        xs: "450px",
       },
     },
   }, 

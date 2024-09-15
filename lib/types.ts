@@ -40,3 +40,10 @@ export interface ProjectCardsProps {
 export interface Sliderimages{
     images: string[];    
 }
+
+export interface FormState {
+    name: string;
+    email: string;
+    message: string;
+  }
+  

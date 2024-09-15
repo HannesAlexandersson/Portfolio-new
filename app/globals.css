@@ -22,6 +22,12 @@ body {
   -webkit-text-stroke: 1px black;
 }
 @layer components {
+  .sectionHeadText {
+    @apply text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px];
+  }
+  .sectionSubText {
+    @apply sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider;
+  }
   .hamburger-line {
     @apply h-[2px] w-5 origin-right rounded-full bg-white transition-all duration-300;
   }
