@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       
-      <div className="bg-secondary-pattern bg-cover bg-no-repeat bg-center w-screen h-screen">
+      <div className="bg-secondary-pattern bg-cover bg-no-repeat bg-center w-screen h-[100svh]">
 
       <Hero />
       
