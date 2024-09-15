@@ -17,9 +17,10 @@ interface ProjectCardProps {
   tags: { name: string; color: string }[]
   image: string
   source_code_link: string
+  link: string
 }
 
-const ProjectCard:React.FC<ProjectCardProps> = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard:React.FC<ProjectCardProps> = ({ index, name, description, tags, image, source_code_link, link }) => {
 
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -55,7 +56,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ index, name, description, tags
           </div>
         </div>
 
-        <Link href={source_code_link} target='_blank' rel='noreferrer'>
+        <Link href={link} target='_blank' rel='noreferrer'>
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>
