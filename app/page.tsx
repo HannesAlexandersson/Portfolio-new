@@ -15,12 +15,24 @@ export default function Home() {
       </div>
       
       <div className="mt-20 mb-40 flex justify-center items-center flex-col ">
+
+        <section className="flex flex-col justify-center items-start gap-4 mt-8 w-full px-12">     
+        
+          <p className="sectionSubText font-bebas text-[#f3e1c7] ">Välkommen till min</p>
+          <h2 className="sectionHeadText font-bebas">portfolio!</h2>
+          <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+            Den här sidan fungerar som ett sorts CV samt en kartläggning över alla projekt
+            jag varit delaktig i. Under kollektionssidan hittar du projekten, men ett axplock får 
+            du se här nedanför. Om du vill komma i kontakt med mig så kan du göra det via kontaktsidan.
+          </p>
           
-          <div id="about" className="flex flex-wrap justify-center items-center mt-8 mb-4 mx-12">
-            <h2 className="text-5xl font-ibm text-[#f3e1c7] ">Mina senaste projekt:</h2>
+        </section>
+          
+          <div id="about" className="flex flex-wrap justify-center items-center mt-28 w-full">
+            <h3 className="sectionHeadText font-bebas">Projekt</h3>
           </div>
           
-        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-32">   
+        <div className="mt-4 flex items-center justify-center content-center flex-col gap-14 px-4 md:px-12">   
 
           {frontPagePreview.map((project) => (
             <Preview key={project.title} project={project} />
