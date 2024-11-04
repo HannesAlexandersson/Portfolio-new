@@ -18,10 +18,10 @@ export default function Cv(){
       ];
     
       const professionalSkills = [
-        { name: 'Samarbete', percentage: '90%', animationName: 'animate-path1' },
-        { name: 'Problemlösning', percentage: '70%', animationName: 'animate-path2' },
-        { name: 'Kreativitet', percentage: '70%', animationName: 'animate-path3' },
-        { name: 'Kommunikation', percentage: '90%', animationName: 'animate-path4' },
+        { name: 'Samarbete', percentage: 90, animationName: 'animate-path1' },
+        { name: 'Problemlösning', percentage: 70, animationName: 'animate-path2' },
+        { name: 'Kreativitet', percentage: 70, animationName: 'animate-path3' },
+        { name: 'Kommunikation', percentage: 90, animationName: 'animate-path4' },
       ];
 
     return(
@@ -68,16 +68,16 @@ export default function Cv(){
                                     cy="16"
                                     r="14"
                                     fill="none"
-                                    stroke="#0ef"
+                                    stroke="#2ef"
                                     strokeWidth="4"
                                     strokeDasharray="88"
                                     strokeDashoffset="88"
+                                    className={`transition duration-1000 ease-in-out animate-path-${index + 1}`}            
                                     transform="rotate(-90 16 16)"
-                                    className={`animate-[animate-bar_1s_linear_forwards] ${skill.animationName}`}
                                 />
                                 </svg>
                                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold animate-showText opacity-0">
-                                {skill.percentage}
+                                {skill.percentage}%
                                 </span>
                             </div>
                             <p className="mt-2 text-lg animate-showText opacity-0">{skill.name}</p>
