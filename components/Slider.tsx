@@ -9,6 +9,7 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [mouseDownAt, setMouseDownAt] = useState<number | null>(null);
   const [prevPercentage, setPrevPercentage] = useState<number>(0);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   const handleOnDown = useCallback((event: MouseEvent | TouchEvent) => {
     if (event instanceof MouseEvent) {
@@ -21,10 +22,16 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
   const handleOnUp = useCallback(() => {
     setMouseDownAt(null);
     setPrevPercentage(prevPercentage);
+    setIsAnimating(true);
+
+    // Add a delay before allowing the next slide movement
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 800);
   }, [prevPercentage]);
 
   const handleOnMove = useCallback((event: MouseEvent | TouchEvent) => {
-    if (mouseDownAt === null || !trackRef.current) return;
+    if (mouseDownAt === null || !trackRef.current || isAnimating) return;
 
     let clientX = 0;
     if (event instanceof MouseEvent) {
@@ -36,7 +43,7 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
     const mouseDelta = mouseDownAt - clientX;
 
     // Reduced sensitivity for smooth movement
-    const sensitivity = 0.1;
+    const sensitivity = 0.01;
     const percentage = (mouseDelta * sensitivity) / window.innerWidth * -100;
 
     const nextPercentage = Math.max(Math.min(prevPercentage + percentage, 0), -100);
@@ -44,9 +51,9 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
     setPrevPercentage(nextPercentage);
 
     // Smooth transition for the track movement
-    trackRef.current.style.transition = 'transform 0.8s ease';
+    trackRef.current.style.transition = 'transform 1.8s ease';
     trackRef.current.style.transform = `translate(${nextPercentage}%, -50%)`;
-  }, [mouseDownAt, prevPercentage]);
+  }, [mouseDownAt, prevPercentage, isAnimating]);
 
   useEventListener('mousedown', handleOnDown as EventListener, typeof window !== 'undefined' ? window : null);
   useEventListener('mouseup', handleOnUp as EventListener, typeof window !== 'undefined' ? window : null);
@@ -60,7 +67,7 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
     <div
       ref={trackRef}
       className="absolute flex overflow-hidden gap-[4vmin] select-none"
-      style={{ 
+      style={{
         left: '50%',
         top: '50%',
         transform: `translate(${prevPercentage}%, -50%)`,
@@ -72,9 +79,9 @@ const Slider: React.FC<Sliderimages> = ({ images }) => {
         <div key={index} className="w-[60vmin] h-[76vmin]">
           <Image
             src={src}
-            alt={`Slide ${index}`}              
+            alt={`Slide ${index}`}
             width={300}
-            height={600}              
+            height={600}
             className='object-cover object-center w-full h-full pointer-events-none'
             draggable="false" // Prevents drag behavior on the image
           />

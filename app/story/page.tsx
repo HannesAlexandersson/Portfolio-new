@@ -19,7 +19,8 @@ export default function Story(){
                <StoryBoard textsections={storyIntro} />
                  
                </section>
-               <section className="px-8 md:px-16 mt-32">
+
+               <section className="mt-32">
                 <div className="border-wrapperWhite mt-12">
                     <div className="border-wrapperBlack1">
                         <div className="border-wrapperWhite">
