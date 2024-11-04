@@ -5,15 +5,13 @@ import { ProjectData } from "@/lib/types";
 export default function Preview({ project }: ProjectData) {
 
     return(
-      <div className="flex flex-col items-center my-8">
-      <div className="w-[75%] md:w-full text-secondary text-xl font-ibm">
-      <h3 className="sectionSubText font-bebas text-[#f3e1c7] ">
-       
+      <div className="flex flex-col items-center my-8 w-full">
+      <div className="w-full text-secondary text-xl font-ibm">
+        <h3 className="sectionSubText font-bebas text-[#f3e1c7] self-start">       
           <Link href={project.link}>
             {project.title}
           </Link>
-        </h3>
-        
+        </h3>        
       </div>
       <div className="mt-3">
         <Link className="contents" href={project.link}>
