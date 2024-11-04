@@ -10,6 +10,7 @@ import {
 } from "@/public/services/index";
 
 import {
+  halsokollen as hälsokollen,
   teams,
   snack,
   pong,
@@ -24,6 +25,8 @@ import {
   retro,
   tic,
 } from "@/public/projects/index";
+
+
 
 export interface storyTextSections {
   sectionSubText: string;
@@ -181,6 +184,28 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    name: "Hälsokollen",
+    description:
+      "Mitt examensarbete. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hälsokollen,
+    source_code_link: "https://github.com/HannesAlexandersson/examensarbete",
+    link: "https://github.com/HannesAlexandersson/examensarbete",
+  },
   {
     name: "Mormorochjag",
     description:

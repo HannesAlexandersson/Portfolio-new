@@ -8,13 +8,23 @@ export const navLinks: NavLink[] = [
     { href: '/contact', text: 'Kontakt', icon: '/Navicons/contact.svg' },
   ];
 
+export const mobileApps: ProjectProps[] = [
+  {
+    title: "Konstiga Måsen",
+    description: "Vårt allra senaste projekt. I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn i Lindholmen, med målet att på ett roligt och lekfullt vis informera om deras närområde. Appen är byggd i React och Contenful.",
+    link: "https://sammanslaget-green.vercel.app/",
+    preview: "/Screens/masen1.png",
+  },
+  {
+    title: "Hälsokollen",
+    description: "Mitt examensarbete. Byggt i React Native och Expo. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
+    link: "https://github.com/HannesAlexandersson/examensarbete",
+    preview: "/Screens/halsokollen.png",
+  }
+];
+
 export const frontPagePreview: ProjectProps[] = [
-    {
-      title: "Konstiga Måsen",
-      description: "Vårt allra senaste projekt. I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn i Lindholmen, med målet att på ett roligt och lekfullt vis informera om deras närområde. Appen är byggd i React och Contenful.",
-      link: "https://sammanslaget-green.vercel.app/",
-      preview: "/Screens/masen1.png",
-    },
+    
     {
       title: "Mormor och jag",
       description: "En sida jag byggde åt min fru med Next.js och Sanity CMS. Hon använder den till att sälja saker som hon pysslat, sytt och drejat.",
@@ -57,6 +67,15 @@ export const frontPagePreview: ProjectProps[] = [
   ]
 
 export const thirdSemester: Projects[] = [
+  {
+    Name: "Hälsokollen",
+    Url: "https://github.com/HannesAlexandersson/examensarbete",
+    Github: "https://github.com/HannesAlexandersson/examensarbete",
+    img: "/Screenshots/halsokollen.png",
+    path: "/extWebPage?name=Hälsokollen",
+    description: "Mitt examensarbete. Byggt i React Native och Expo. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
+    tooltip: "Mitt examensarbete. Byggt i React Native och Expo. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus."
+  },
   {
     Name: "Konstiga Måsen",
     Url: "https://sammanslaget-green.vercel.app/",
