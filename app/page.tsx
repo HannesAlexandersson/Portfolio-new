@@ -33,7 +33,7 @@ export default function Home() {
           </div>
 
           <div className="mt-4 flex flex-row items-center justify-center content-center ">         
-            <h3 className="sectionSubText font-bebas text-2xl text-[#f3e1c7] content-center ">Mobil appar</h3>
+            <h3 className="sectionSubText font-bebas text-2xl text-[#f3e1c7] content-center ">Mobil-appar</h3>
           </div>
           <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-14 px-4 items-start justify-items-center">
             
