@@ -11,8 +11,10 @@ const water = '/projects/waterworks.png';
 const pong = '/projects/pongscreenshot.png';
 const snack = '/projects/snacscreenshot.png';
 const teams = '/projects/someteamsscreenshot.png';
+const halsokollen = '/projects/halsokollen.png';
 
 export {
+  halsokollen,
   teams,
   snack,
   pong,

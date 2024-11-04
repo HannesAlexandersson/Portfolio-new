@@ -13,7 +13,7 @@ interface ComputersProps {
 const Computers:React.FC<ComputersProps> = ({ isMobile }) => {
   const computer = useGLTF('/screen/scene.gltf')
   return (
-    <mesh>
+    <mesh rotation={[0, -5, 0]}>
        <hemisphereLight intensity={Math.PI} groundColor='black' />
        <pointLight intensity={1}  />
        <spotLight
@@ -26,8 +26,8 @@ const Computers:React.FC<ComputersProps> = ({ isMobile }) => {
         />
        <primitive
         object={computer.scene}
-        scale={isMobile ? 5 : 8}
-        position={isMobile ? [0, -4.45, -2.2] : [0, -8.25, -1.5]}
+        scale={isMobile ? 5 : 10}
+        position={isMobile ? [-0.2, -7.45, 0.75] : [0, -7.25, 0.5]}
         rotation={[0, 0, 0]}
          />
     </mesh>
