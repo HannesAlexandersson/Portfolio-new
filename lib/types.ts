@@ -1,7 +1,8 @@
 
 export interface ProjectProps {
-    title: string;   
-    description: string;
+    title: string;
+    titleDescription?: string;
+    description?: string;
     link: string;    
     preview: string;   
 }

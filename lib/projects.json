@@ -74,7 +74,7 @@
       },
       "Waterworks": {
         "Name": "Waterworks",
-        "Url": "https://alexanderochson.se/waterworks/",
+        "Url": "https://waterworks-six.vercel.app/",
         "Github": "https://github.com/HannesAlexandersson/waterworks",
         "img": "/Screenshots/waterworks.png",
         "path": "/extWebPage?name=Waterworks",

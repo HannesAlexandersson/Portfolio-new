@@ -61,7 +61,7 @@ export default function Cv(){
                         {professionalSkills.map((skill, index) => (
                             <div key={index} className="w-1/2 mb-8 text-center mx-4">
                             <div className="relative inline-block">
-                                <FaRegCircle className="w-32 h-32 text-[#0ef]" />
+                                <FaRegCircle className="w-32 h-32 text-[#0ef] opacity-0" />
                                 <svg className="w-32 h-32 absolute top-0 left-0" viewBox="0 0 32 32">
                                 <circle
                                     cx="16"
