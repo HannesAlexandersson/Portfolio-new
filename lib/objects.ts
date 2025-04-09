@@ -11,13 +11,15 @@ export const navLinks: NavLink[] = [
 export const mobileApps: ProjectProps[] = [
   {
     title: "Konstiga Måsen",
-    description: "Vårt allra senaste projekt. I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn i Lindholmen, med målet att på ett roligt och lekfullt vis informera om deras närområde. Appen är byggd i React och Contenful.",
+    titleDescription: "OBS! Denna webbapp är byggd enbart för mobile view enligt gällande requirements för detta skolprojekt. Därför rekomenderas inte att besöka sidan med desktop device eller ens laptop utan att ha devtools med mobileview aktiverad.",
+    description:  "I 'Konstiga Måsen' arbetade vi tillsammans med UX design och manusförfattarna för att skapa en applikation för barn i Lindholmen, med målet att på ett roligt och lekfullt vis informera om deras närområde. Appen är byggd i React och Contenful.",
     link: "https://sammanslaget-green.vercel.app/",
     preview: "/Screens/masen1.png",
   },
   {
     title: "Hälsokollen",
-    description: "Mitt examensarbete. Byggt i React Native och Expo. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
+    titleDescription: "Mitt examensarbete för Yrgo. Scopet för arbetet var att under 6 veckor jobba med något vi aldrig tidigare arbetat med. Jag valde att arbeta med React native.",
+    description: "Byggt i React Native och Expo. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
     link: "https://github.com/HannesAlexandersson/examensarbete",
     preview: "/Screens/halsokollen.png",
   }
@@ -27,27 +29,27 @@ export const frontPagePreview: ProjectProps[] = [
     
     {
       title: "Mormor och jag",
-      description: "En sida jag byggde åt min fru med Next.js och Sanity CMS. Hon använder den till att sälja saker som hon pysslat, sytt och drejat.",
+      titleDescription: "En sida jag byggde åt min fru med Next.js och Sanity CMS. Hon använder den till att sälja saker som hon pysslat, sytt och drejat.",
       link: "https://mormorochjag.vercel.app/",
       preview: "/Screens/mojagScren.png",
     },
     {
       title: "Svenska krögare",
-      description: "Under sommaren 2024 så fick jag och en klasskamrat i uppdrag att skapa en helt ny hemsida åt 'Svenska krögare'. Vi byggde sidan i Next.js och använde Contentful som CMS åt kunden. Detta var mitt första riktiga uppdrag som webbutvecklare där jag faktiskt skapade något som sedan används på en daglig basis och som jag sedan fick betalt för.!",
+      titleDescription: "Under sommaren 2024 så fick jag och en klasskamrat i uppdrag att skapa en helt ny hemsida åt 'Svenska krögare'. Vi byggde sidan i Next.js och använde Contentful som CMS åt kunden. Detta var mitt första riktiga uppdrag som webbutvecklare där jag faktiskt skapade något som sedan används på en daglig basis och som jag sedan fick betalt för.!",
       link: "https://www.krogare.se/",
       preview: "/Screens/krogare.png",
     },
     {
       title: "Branchevent",
-      description: "I Branchevent så samarbetade vi med Digital Design studenterna för att skapa en application det stora LIA eventet som Yrgo hostade. Varje grupp med studenter tävlade mot varandra i att skapa en app där företag och studenter dels kunde anmäla sig till eventet men även (i vårt fall) skulle kunna matcha med varandra baserat på vilka preferenser man har. Det vinnande bidraget användes sedan i inbjudan till eventet. Vi byggde appen i React och använde supabase som backend.",
+      titleDescription: "I Branchevent så samarbetade vi med Digital Design studenterna för att skapa en application det stora LIA eventet som Yrgo hostade. Varje grupp med studenter tävlade mot varandra i att skapa en app där företag och studenter dels kunde anmäla sig till eventet men även (i vårt fall) skulle kunna matcha med varandra baserat på vilka preferenser man har. Det vinnande bidraget användes sedan i inbjudan till eventet. Vi byggde appen i React och använde supabase som backend.",
       link: "https://liameetup.vercel.app/",
       preview: "/Screens/branchevent.svg",
     },
     {
       title: "Protech",
-      description:
+      titleDescription:
         "Protech är visserligen inget av de nyaste projektet utan snarare ett av de första vi hade. Även i detta projekt arbetade vi sida vid sida med Digital design studenterna. Vi skulle bygga en landingpage för ett fiktivt företag och promota fiktiva produkter. Produkterna hade Graphical Computer Artist studenterna gjort. Vårt 'företag' sålde musik produkter. På grund av att det var så tidigt i utbildningen så är sidan byggd i php med lite vanilla JS strösslat här och där. ",
-      link: "https://www.alexanderochson.se/Protech/",
+      link: "https://www.alexanderochson.com/Protech/",
       preview: "/Screens/Group 66.svg",
     },
     /* {
@@ -181,7 +183,7 @@ export const projectData: Projects[] = [
   },
   {
     Name: "Waterworks",
-    Url: "https://alexanderochson.se/waterworks/",
+    Url: "https://waterworks-six.vercel.app/",
     Github: "https://github.com/HannesAlexandersson/waterworks",
     img: "/Screenshots/waterworks.png",
     path: "/extWebPage?name=Waterworks",

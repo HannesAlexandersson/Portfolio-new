@@ -300,7 +300,7 @@ export const projects = [
     ],
     image: protech,
     source_code_link: "https://github.com/HannesAlexandersson/Protech",
-    link: "https://alexanderochson.se/Protech/",
+    link: "https://alexanderochson.com/Protech/",
   },
   {
     name: "Chuck Norris joke generator",
@@ -340,7 +340,7 @@ export const projects = [
     ],
     image: retro,
     source_code_link: "https://github.com/HannesAlexandersson/Retronautica",
-    link: "https://alexanderochson.se/Retronautica/",
+    link: "https://alexanderochson.com/Retronautica/",
   },
   {
     name: "Tick Tack Toe",
@@ -367,7 +367,7 @@ export const projects = [
   {
     name: "Finance app",
     description:
-    "Ett litet sidoprojekt där användaren kan knappa in en aktie och få tillbaka aktuell kurs. Tyvär fungerar hostingen för min webscraper väldigt dåligt och man måste ibland testa och vänta!",
+    "Ett litet sidoprojekt där användaren kan knappa in en aktie och få tillbaka aktuell kurs. Tyvär fungerar hostingen för backenden väldigt dåligt och man måste ibland testa och vänta!",
     tags: [
       {
         name: "react",
@@ -402,12 +402,12 @@ export const projects = [
     ],
     image: water,
     source_code_link: "https://github.com/HannesAlexandersson/waterworks",
-    link: "https://waterworks-seven.vercel.app/",
+    link: "https://waterworks-six.vercel.app/",
   },
   {
     name: "Pong",
     description:
-    "Ett litet sidoprojekt där jag byggt en ping klon med vanilla js. I nuläget finns det enbart multiplayer läge.",
+    "Ett litet sidoprojekt där jag byggt en pong klon med vanilla js. I nuläget finns det enbart multiplayer läge.",
     tags: [
       {
         name: "html",
@@ -446,7 +446,7 @@ export const projects = [
     ],
     image: open,
     source_code_link: "https://github.com/HannesAlexandersson/OpenAPI",
-    link: "https://alexanderochson.se/OpenAPI",
+    link: "https://alexanderochson.com/OpenAPI",
   },
   
 ];
