@@ -1,29 +1,30 @@
 import {
-  web,
-  mobile,
   backend,
-  creator,
   boras,
-  snake,
-  yrgo,
+  creator,
+  mobile,
   scaffcalc,
+  snake,
+  web,
+  yrgo,
 } from "@/public/services/index";
 
 import {
-  halsokollen as hälsokollen,
-  teams,
-  snack,
-  pong,
-  water,
-  open,
+  alexanderochson,
+  chuck,
   finance,
-  mojag,
+  halsokollen as hälsokollen,
   krogare,
   lia,
+  mojag,
+  open,
+  pong,
   protech,
-  chuck,
   retro,
+  snack,
+  teams,
   tic,
+  water,
 } from "@/public/projects/index";
 
 
@@ -185,6 +186,49 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Alexander&son",
+    description: "Webbyrån Alexander&sons hemsida. Min egna webbyrå där jag erbjduer webbutvecklingstjänster till överkomliga priser.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: alexanderochson,
+    source_code_link: "https://github.com/HannesAlexandersson/alexanderochson",
+    link: "https://www.alexanderandson.com/",
+  },
+  {
+    name: "Svenska Krögare",
+    description:
+      "En komplett hemsida för Svenska krögare. Innehåller web-to-lead med nyhetsbrev och member subscription",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Contentful CMS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: krogare,
+    source_code_link: "https://github.com/krogare/krogare",
+    link: "https://www.krogare.se/",
+  },
+  {
     name: "Hälsokollen",
     description:
       "Mitt examensarbete. En prototyp för en app som är en del av ett utvecklingsprojekt för lekterapin hos Drottning Silvias barn- och ungdomssjukhus.",
@@ -227,29 +271,7 @@ export const projects = [
     image: mojag,
     source_code_link: "https://github.com/HannesAlexandersson/Mormorochjag",
     link: "https://mormorochjag.vercel.app/",
-  },
-  {
-    name: "Svenska Krögare",
-    description:
-      "En komplett hemsida för Svenska krögare. Innehåller web-to-lead med nyhetsbrev och member subscription",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Contentful CMS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: krogare,
-    source_code_link: "https://github.com/krogare/krogare",
-    link: "https://www.krogare.se/",
-  },
+  },  
   {
     name: "LIA meetup",
     description:

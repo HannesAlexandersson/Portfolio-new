@@ -12,20 +12,9 @@ const pong = '/projects/pongscreenshot.png';
 const snack = '/projects/snacscreenshot.png';
 const teams = '/projects/someteamsscreenshot.png';
 const halsokollen = '/projects/halsokollen.png';
+const alexanderochson = '/projects/alexanderochson.png';
 
 export {
-  halsokollen,
-  teams,
-  snack,
-  pong,
-  water,
-  open,
-  finance,
-  mojag,
-  chuck,
-  protech,
-  krogare,
-  lia,
-  retro,
-  tic
-}
+  alexanderochson, chuck, finance, halsokollen, krogare,
+  lia, mojag, open, pong, protech, retro, snack, teams, tic, water
+};

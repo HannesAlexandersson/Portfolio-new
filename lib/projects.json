@@ -91,15 +91,24 @@
         "tooltip": "My first typescript app. A simple tic tac toe game."
       },
       "portfolio": {
-        "Name": "Hannes-portfolio",
-        "Url": "https://alexanderochson.se/portfolio/",
+        "Name": "Hannes personal portfolio",
+        "Url": "https://portfolio-new-eight-zeta.vercel.app/",
         "Github": "https://github.com/HannesAlexandersson/portfolio",
         "img": "/Screenshots/portfolio.jpg",
         "path": "/extWebPage?name=portfolio",
         "description": "This is my portfolio. I built it with react and next.js. Its actually a refactoring of my old portfolio site that was built in a custom made php router system. But since I lost my hosting abilitys I needed to refactor it to host on Vercel. I have also tried to make it as SEO friendly, again, for educational purpuses.",
         "tooltip": "next.js"
-      }
-    },
+      },
+      "alexanderochson": {
+        "Name": "alexanderochson",
+        "Url": "https://www.alexanderochson.com/",
+        "Github": "",
+        "img": "/Screenshots/alexanderochsonscreenshot.png",
+        "path": "/extWebPage?name=alexanderochson",
+        "description": "This the website of Alexander&son. The company provides affordable web development services. Its built in next.js and is hosted on Vercel. ",
+        "tooltip": "Next.js Contentful and Vercel. This is the website of Alexander&son. The company provides affordable web development services."
+    }
+  },
     "earlyDaysArray": {
       "SomeTeams": {
         "Name": "SomeTeams",
