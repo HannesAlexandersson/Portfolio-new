@@ -13,8 +13,11 @@ const snack = '/projects/snacscreenshot.png';
 const teams = '/projects/someteamsscreenshot.png';
 const halsokollen = '/projects/halsokollen.png';
 const alexanderochson = '/projects/alexanderochson.png';
+const urbanstudio = '/projects/urbanstudio.png';
+const glassmorphism = '/projects/glassmorphism.png';
 
 export {
-  alexanderochson, chuck, finance, halsokollen, krogare,
-  lia, mojag, open, pong, protech, retro, snack, teams, tic, water
+  alexanderochson, chuck, finance, glassmorphism, halsokollen, krogare,
+  lia, mojag, open, pong, protech, retro, snack, teams, tic, urbanstudio, water
 };
+

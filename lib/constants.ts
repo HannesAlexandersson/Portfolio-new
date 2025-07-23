@@ -13,6 +13,7 @@ import {
   alexanderochson,
   chuck,
   finance,
+  glassmorphism,
   halsokollen as hälsokollen,
   krogare,
   lia,
@@ -24,6 +25,7 @@ import {
   snack,
   teams,
   tic,
+  urbanstudio,
   water,
 } from "@/public/projects/index";
 
@@ -202,7 +204,7 @@ export const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: alexanderochson,
+    image: glassmorphism,
     source_code_link: "https://github.com/HannesAlexandersson/glassmorphism",
     link: "https://www.glassmorphism-fawn.vercel.app",
   },
@@ -223,7 +225,7 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: alexanderochson,
+    image: urbanstudio,
     source_code_link: "https://github.com/HannesAlexandersson/urban-studio",
     link: "https://www.urban-studio-nine.vercel.app",
   },
