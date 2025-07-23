@@ -38,7 +38,7 @@ export interface storyTextSections {
 export const storyIntro:storyTextSections = {
   sectionSubText: 'Introduktion',
   sectionHeadText: 'Vem är jag?',
-  text: "Jag är en blivande fullstack-utvecklare med en passion för programmering. Jag har en bakgrund inom offentlig sektor. Jag har arbetat hela mitt liv inom hälso- och sjukvården. Min bakgrund som sjuksköterska har gett mig ett unikt perspektiv på hur man löser problem och hur man samarbetar med människor. Jag har alltid haft ett intresse för teknik och har under de senaste åren arbetat med att utveckla mina programmeringskunskaper. Min utbildning är från Yrgo, som av branchen själv anses vara en av de bästa skolorna för webutveckling i Göteborg. Jag strävar alltid efter att bygga användarvänliga och tillgängliga applikationer som är både visuellt tilltalande och funktionella. Jag vill alltid att kunden ska känna sig inkluderad i processen och strävar alltid efter att leverera den bästa möjliga produkten. Jag skapar webbplatser och applikationer med hjälp av modern teknik som React, Next, Node, Express, MongoDB, PostgreSQL och mycket annat. Oavsett vad kunden behöver kan jag leverera. Jag försöker undvika äldre och föråldrad teknik som exempelvis Wordpress, även om det fortfarande är populärt och för tillfället pålitligt, så anser jag att det är föråldrat och sakta håller på att fasas ut. Med en modern teknikstack kan du framtidssäkra din applikation och göra den enklare att underhålla och att uppdatera.",
+  text: "Jag är en nyutexaminerad fullstack-utvecklare med en passion för programmering. Jag har en bakgrund inom offentlig sektor. Jag har arbetat hela mitt liv inom hälso- och sjukvården. Min bakgrund som sjuksköterska har gett mig ett unikt perspektiv på hur man löser problem och hur man samarbetar med människor. Jag har alltid haft ett intresse för teknik och har under de senaste åren arbetat med att utveckla mina programmeringskunskaper. Min utbildning är från Yrgo, som av branchen själv anses vara en av de bästa skolorna för webutveckling i Göteborg. Jag strävar alltid efter att bygga användarvänliga och tillgängliga applikationer som är både visuellt tilltalande och funktionella. Jag vill alltid att kunden ska känna sig inkluderad i processen och strävar alltid efter att leverera den bästa möjliga produkten. Jag skapar webbplatser och applikationer med hjälp av modern teknik som React, Next, Node, Express, MongoDB, PostgreSQL och mycket annat. Oavsett vad kunden behöver kan jag leverera. Jag försöker undvika äldre och föråldrad teknik som exempelvis Wordpress, även om det fortfarande är populärt och för tillfället pålitligt, så anser jag att det är föråldrat och sakta håller på att fasas ut. Med en modern teknikstack kan du framtidssäkra din applikation och göra den enklare att underhålla och att uppdatera.",
 }
 
 export const storySub1:storyTextSections = {
@@ -185,6 +185,48 @@ export const experiences = [
 ];
 
 export const projects = [
+   {
+     name: "GlassMorphism",
+    description: "En template för Alexander&son. Byggd mestadels för att hålla mig sysselsatt medans jag söker jobb men med en alternativ agenda för att kunna säljas till kund genom Alexander&son.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Contentful CMS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: alexanderochson,
+    source_code_link: "https://github.com/HannesAlexandersson/glassmorphism",
+    link: "https://www.glassmorphism-fawn.vercel.app",
+  },
+  {
+     name: "Urban Studio",
+    description: "En template för Alexander&son. Byggd mestadels för att hålla mig sysselsatt medans jag söker jobb men med en alternativ agenda för att kunna säljas till kund genom Alexander&son.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Contentful CMS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: alexanderochson,
+    source_code_link: "https://github.com/HannesAlexandersson/urban-studio",
+    link: "https://www.urban-studio-nine.vercel.app",
+  },
   {
     name: "Alexander&son",
     description: "Webbyrån Alexander&sons hemsida. Min egna webbyrå där jag erbjduer webbutvecklingstjänster till överkomliga priser.",
@@ -301,7 +343,7 @@ export const projects = [
   {
     name: "Protech",
     description:
-      "Ett skolprojekt där vi samarbetade med Digital design studenterna för att skapa en landingpage för ett fiktivt företag och product. Tyvärr har jag inte råd med hosting för tillfället och eftersom sidan är statisk så fungerar den bara lokalt.",
+      "Ett skolprojekt där vi samarbetade med Digital design studenterna för att skapa en landingpage för ett fiktivt företag och product. Sidan hostas med gratistier på Render vilket kan medföra att den ibland har lång laddningstid.",
     tags: [
       {
         name: "html",
@@ -322,7 +364,7 @@ export const projects = [
     ],
     image: protech,
     source_code_link: "https://github.com/HannesAlexandersson/Protech",
-    link: "https://alexanderochson.com/Protech/",
+    link: "https://protechsite.onrender.com/",
   },
   {
     name: "Chuck Norris joke generator",
@@ -345,7 +387,7 @@ export const projects = [
   {
     name: "Retronautica",
     description:
-      "Ett av de allra första skol projekten. Det är en landingpage och en detalj sida för en fiktiv biograf. Tyvärr har jag inte råd med hosting för tillfället och eftersom sidan är statisk så fungerar den bara lokalt.",
+      "Ett av de allra första skol projekten. Det är en landingpage och en detalj sida för en fiktiv biograf. Sidan hostas med gratistier på Render vilket kan medföra att den ibland har lång laddningstid.",
     tags: [
       {
         name: "php",
@@ -362,7 +404,7 @@ export const projects = [
     ],
     image: retro,
     source_code_link: "https://github.com/HannesAlexandersson/Retronautica",
-    link: "https://alexanderochson.com/Retronautica/",
+    link: "https://retronautica.onrender.com",
   },
   {
     name: "Tick Tack Toe",
@@ -389,7 +431,7 @@ export const projects = [
   {
     name: "Finance app",
     description:
-    "Ett litet sidoprojekt där användaren kan knappa in en aktie och få tillbaka aktuell kurs. Tyvär fungerar hostingen för backenden väldigt dåligt och man måste ibland testa och vänta!",
+    "Ett litet sidoprojekt där användaren kan knappa in en aktie och få tillbaka aktuell kurs. Backenden hostas med gratistier på Render vilket kan medföra att den ibland har lång laddningstid.",
     tags: [
       {
         name: "react",
