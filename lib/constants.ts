@@ -301,7 +301,7 @@ export const projects = [
   {
     name: "Protech",
     description:
-      "Ett skolprojekt där vi samarbetade med Digital design studenterna för att skapa en landingpage för ett fiktivt företag och product.",
+      "Ett skolprojekt där vi samarbetade med Digital design studenterna för att skapa en landingpage för ett fiktivt företag och product. Tyvärr har jag inte råd med hosting för tillfället och eftersom sidan är statisk så fungerar den bara lokalt.",
     tags: [
       {
         name: "html",
@@ -345,7 +345,7 @@ export const projects = [
   {
     name: "Retronautica",
     description:
-      "Ett av de allra första skol projekten. Det ör en landingpage och en detalj sida för en fiktiv biograf. Vi valde ett tema av sci-fi och retro för vår biograf.",
+      "Ett av de allra första skol projekten. Det är en landingpage och en detalj sida för en fiktiv biograf. Tyvärr har jag inte råd med hosting för tillfället och eftersom sidan är statisk så fungerar den bara lokalt.",
     tags: [
       {
         name: "php",

@@ -1,18 +1,17 @@
-import { FaHtml5 } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
+import { FaHtml5, FaStackOverflow } from "react-icons/fa";
+import { FaRegCircle } from "react-icons/fa6";
 import { IoLogoCss3, IoLogoReact } from "react-icons/io5";
 import { SiPhp } from "react-icons/si";
-import { FaStackOverflow } from "react-icons/fa";
-import { FaRegCircle } from "react-icons/fa6";
+import { TbBrandJavascript } from "react-icons/tb";
 
 
 export default function Cv(){
     
     const technicalSkills = [
         { name: 'HTML', icon: FaHtml5, color: 'text-[#c95d2e]', progress: '70%' },
-        { name: 'Javascript', icon: TbBrandJavascript, color: 'text-[#b0bc1e]', progress: '50%' },
-        { name: 'CSS', icon: IoLogoCss3, color: 'text-[#147bbc]', progress: '58%' },
-        { name: 'React', icon: IoLogoReact, color: 'text-[#69bcbc]', progress: '35%' },
+        { name: 'Javascript', icon: TbBrandJavascript, color: 'text-[#b0bc1e]', progress: '60%' },
+        { name: 'CSS', icon: IoLogoCss3, color: 'text-[#147bbc]', progress: '60%' },
+        { name: 'React', icon: IoLogoReact, color: 'text-[#69bcbc]', progress: '75%' },
         { name: 'PHP', icon: SiPhp, color: 'text-[#6F5091]', progress: '55%' },
         { name: 'Stack OverFlow', icon: FaStackOverflow, color: 'text-[#FFA500]', progress: '85%' },
       ];
