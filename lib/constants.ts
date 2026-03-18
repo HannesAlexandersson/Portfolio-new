@@ -248,7 +248,7 @@ export const projects = [
     ],
     image: alexanderochson,
     source_code_link: "https://github.com/HannesAlexandersson/alexanderochson",
-    link: "https://www.alexanderandson.com/",
+    link: "https://www.alexanderochson.vercel.app",
   },
   {
     name: "Svenska Krögare",
