@@ -206,7 +206,7 @@ export const projects = [
     ],
     image: glassmorphism,
     source_code_link: "https://github.com/HannesAlexandersson/glassmorphism",
-    link: "https://www.glassmorphism-fawn.vercel.app",
+    link: "https://glassmorphism-fawn.vercel.app",
   },
   {
      name: "Urban Studio",
@@ -227,7 +227,7 @@ export const projects = [
     ],
     image: urbanstudio,
     source_code_link: "https://github.com/HannesAlexandersson/urban-studio",
-    link: "https://www.urban-studio-nine.vercel.app",
+    link: "https:/urban-studio-nine.vercel.app",
   },
   {
     name: "Alexander&son",
@@ -248,7 +248,7 @@ export const projects = [
     ],
     image: alexanderochson,
     source_code_link: "https://github.com/HannesAlexandersson/alexanderochson",
-    link: "https://www.alexanderochson.vercel.app",
+    link: "https://alexanderochson.vercel.app",
   },
   {
     name: "Svenska Krögare",
@@ -270,7 +270,7 @@ export const projects = [
     ],
     image: krogare,
     source_code_link: "https://github.com/krogare/krogare",
-    link: "https://www.krogare.se/",
+    link: "https://krogare.se/",
   },
   {
     name: "Hälsokollen",
